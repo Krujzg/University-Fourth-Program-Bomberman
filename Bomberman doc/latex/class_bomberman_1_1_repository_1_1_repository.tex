@@ -1,0 +1,98 @@
+\hypertarget{class_bomberman_1_1_repository_1_1_repository}{}\section{Bomberman.\+Repository.\+Repository Class Reference}
+\label{class_bomberman_1_1_repository_1_1_repository}\index{Bomberman.Repository.Repository@{Bomberman.Repository.Repository}}
+
+
+Database repository  
+
+
+Inheritance diagram for Bomberman.\+Repository.\+Repository\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_bomberman_1_1_repository_1_1_repository}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_bomberman_1_1_repository_1_1_repository_aec1133214e470bf4e1f49fb97aa07870}{Repository}} ()
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \mbox{\hyperlink{class_bomberman_1_1_repository_1_1_repository}{Repository}} class. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_bomberman_1_1_repository_1_1_repository_a3374580de7f0c6859a95e87813d85983}{Insert}} (\mbox{\hyperlink{class_bomberman_1_1_data_1_1_rounds}{Rounds}} entity)
+\begin{DoxyCompactList}\small\item\em Insert a new element into an entity. \end{DoxyCompactList}\item 
+I\+Enumerable$<$ \mbox{\hyperlink{class_bomberman_1_1_data_1_1_rounds}{Rounds}} $>$ \mbox{\hyperlink{class_bomberman_1_1_repository_1_1_repository_a3853a77eda150ba9389082a7315413f1}{Select}} (\mbox{\hyperlink{class_bomberman_1_1_data_1_1_rounds}{Rounds}} entity)
+\begin{DoxyCompactList}\small\item\em Returns all items from an entity. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_bomberman_1_1_repository_1_1_repository_a033b2a5fbc75ea920d97487172669963}\label{class_bomberman_1_1_repository_1_1_repository_a033b2a5fbc75ea920d97487172669963}} 
+readonly \mbox{\hyperlink{class_bomberman_1_1_data_1_1_bomber_man_db_entities}{Bomber\+Man\+Db\+Entities}} {\bfseries db\+Context}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Database repository 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_bomberman_1_1_repository_1_1_repository_aec1133214e470bf4e1f49fb97aa07870}\label{class_bomberman_1_1_repository_1_1_repository_aec1133214e470bf4e1f49fb97aa07870}} 
+\index{Bomberman.Repository.Repository@{Bomberman.Repository.Repository}!Repository@{Repository}}
+\index{Repository@{Repository}!Bomberman.Repository.Repository@{Bomberman.Repository.Repository}}
+\subsubsection{\texorpdfstring{Repository()}{Repository()}}
+{\footnotesize\ttfamily Bomberman.\+Repository.\+Repository.\+Repository (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Initializes a new instance of the \mbox{\hyperlink{class_bomberman_1_1_repository_1_1_repository}{Repository}} class. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_bomberman_1_1_repository_1_1_repository_a3374580de7f0c6859a95e87813d85983}\label{class_bomberman_1_1_repository_1_1_repository_a3374580de7f0c6859a95e87813d85983}} 
+\index{Bomberman.Repository.Repository@{Bomberman.Repository.Repository}!Insert@{Insert}}
+\index{Insert@{Insert}!Bomberman.Repository.Repository@{Bomberman.Repository.Repository}}
+\subsubsection{\texorpdfstring{Insert()}{Insert()}}
+{\footnotesize\ttfamily virtual bool Bomberman.\+Repository.\+Repository.\+Insert (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_bomberman_1_1_data_1_1_rounds}{Rounds}}}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Insert a new element into an entity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & Type of entity\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if operation was successful, false otherwise.
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_bomberman_1_1_repository_1_1_i_repository_ab117e28c62bf81dee5e699cd9e376588}{Bomberman.\+Repository.\+I\+Repository}}.
+
+\mbox{\Hypertarget{class_bomberman_1_1_repository_1_1_repository_a3853a77eda150ba9389082a7315413f1}\label{class_bomberman_1_1_repository_1_1_repository_a3853a77eda150ba9389082a7315413f1}} 
+\index{Bomberman.Repository.Repository@{Bomberman.Repository.Repository}!Select@{Select}}
+\index{Select@{Select}!Bomberman.Repository.Repository@{Bomberman.Repository.Repository}}
+\subsubsection{\texorpdfstring{Select()}{Select()}}
+{\footnotesize\ttfamily I\+Enumerable$<$\mbox{\hyperlink{class_bomberman_1_1_data_1_1_rounds}{Rounds}}$>$ Bomberman.\+Repository.\+Repository.\+Select (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_bomberman_1_1_data_1_1_rounds}{Rounds}}}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns all items from an entity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & Type of entity\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Every item in entity
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_bomberman_1_1_repository_1_1_i_repository_a5d04a798b7326f2c05f77a29dd0de285}{Bomberman.\+Repository.\+I\+Repository}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Kovács\+Levente/\+Documents/oenik\+\_\+prog4\+\_\+2019\+\_\+1\+\_\+p71jvi\+\_\+u41kaf/\+Bomberman/\+Bomberman.\+Repository/Repository.\+cs\end{DoxyCompactItemize}

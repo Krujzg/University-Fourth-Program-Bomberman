@@ -1,0 +1,501 @@
+\hypertarget{class_bomberman_1_1_business_logic_1_1_game_logic}{}\section{Bomberman.\+Business\+Logic.\+Game\+Logic Class Reference}
+\label{class_bomberman_1_1_business_logic_1_1_game_logic}\index{Bomberman.BusinessLogic.GameLogic@{Bomberman.BusinessLogic.GameLogic}}
+
+
+This is a gamelogic class which doing every work of the players  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_game_logic_a14787126f329ddf18b91fb37caac1eee}{Game\+Logic}} ()
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_game_logic}{Game\+Logic}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_game_logic_a4f8cd01b5a5e15e22bdcd912b539aee9}{Game\+Logic}} (\mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_game_model}{Game\+Model}} \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_game_logic_abde3e754422fcaffa997b571fb9e7010}{gM}}, \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_data_base_logic}{Data\+Base\+Logic}} repo)
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_game_logic}{Game\+Logic}} class. This constructor is for testing. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_game_logic_a1f2f37aca7ccda0825d68f75bbf5fb3d}{Setup\+Game\+Logic}} (string file\+Path, string p1\+\_\+name, string p2\+\_\+name)
+\begin{DoxyCompactList}\small\item\em This method builds up the gamingscreen ( map, players) from the default txt-\/s \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_game_logic_a457b06be2502ed585fe15f6dcd5bc367}{Load\+Game\+Logic}} (string file\+Path)
+\begin{DoxyCompactList}\small\item\em This method calls the gamemodel s Load\+Game method \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_game_logic_a8b8614ef81f7bf80f46384cc1f440ded}{Save\+Game}} ()
+\begin{DoxyCompactList}\small\item\em This method calls the gamemodel s Save\+Game method \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_game_logic_a452baa5a3f7c27d25e2b3c1d0212596e}{Control}} (\mbox{\hyperlink{namespace_bomberman_1_1_business_logic_1_1_enum_ae31d051394d251f13cbd72f883375601}{Movement}} movement, \mbox{\hyperlink{class_bomberman_1_1_model_1_1_player}{Player}} p)
+\begin{DoxyCompactList}\small\item\em This method decides the action of the player who does them \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_game_logic_adb1ba7ad7f4a7e7b0d32c2bc6b312ac1}{Regenerate\+Bomb}} (\mbox{\hyperlink{class_bomberman_1_1_model_1_1_player}{Player}} player)
+\begin{DoxyCompactList}\small\item\em This method regenerates a bomb after the dropped bomb exploded \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_game_logic_a65a7db93dd325490214d760117bca632}{Pick\+Up\+Power\+Up}} (\mbox{\hyperlink{class_bomberman_1_1_model_1_1_player}{Player}} player, \mbox{\hyperlink{namespace_bomberman_1_1_model_a698c97744bc885fe16cc6f385fc501ef}{Power\+Up}} powerup)
+\begin{DoxyCompactList}\small\item\em This method decides what kind of powerup was picked up by the player \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_game_logic_aa228edcc60791fba9e3a8495f1c6ee63}{Destroy\+Bomb}} (\mbox{\hyperlink{class_bomberman_1_1_model_1_1_bomb}{Bomb}} bomba)
+\begin{DoxyCompactList}\small\item\em This method is making the bombs explode \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_game_logic_a111f41e903e34bd84c7acd362fd0c562}{Drop\+Bomb}} (\mbox{\hyperlink{class_bomberman_1_1_model_1_1_player}{Player}} player)
+\begin{DoxyCompactList}\small\item\em With this method, the player can drop a bomb under itself \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_game_model}{Game\+Model}} \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_game_logic_abde3e754422fcaffa997b571fb9e7010}{gM}}
+\begin{DoxyCompactList}\small\item\em Players and map got from the gamemodel \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_logic_classes_1_1_sound_system}{Sound\+System}} \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_game_logic_acbbb40696d2e107f2340363c2e12069f}{Sound\+System}}
+\begin{DoxyCompactList}\small\item\em Sound\+System field \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_bomberman_1_1_model_1_1_map_object}{Map\+Object}} \mbox{[},\mbox{]} \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_game_logic_a0c0cb930c5ff2e65420cae21fd8563e9}{Map}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets returns map from \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_game_model}{Game\+Model}} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_bomberman_1_1_model_1_1_player}{Player}} \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_game_logic_a29d052d8d9a96d2a9c268d0fa447e502}{Players}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets all the players from \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_game_model}{Game\+Model}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+Event\+Handler \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_game_logic_a7d6ca589e415c4ad23a0554fdfde91e4}{Game\+State\+Changed}}
+\begin{DoxyCompactList}\small\item\em This event helps refreshes the screen after every statechange \end{DoxyCompactList}\item 
+Event\+Handler \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_game_logic_afac06eda1eedc3b5fb9574b8e8e56f0f}{Game\+Finished}}
+\begin{DoxyCompactList}\small\item\em This event helps ending the game \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_game_logic_a378d4ec5e7f170f0cd24de08ffdb5928}{Show\+Power\+Up}} (int y, int x)
+\begin{DoxyCompactList}\small\item\em After Explosion this method will put powerup or floor on the destroyed barrels place \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_bomberman_1_1_model_1_1_map_object}{Map\+Object}} \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_game_logic_a8017ab77c9085d822dc17b0ad664052f}{Power\+Up\+Selector}} ()
+\begin{DoxyCompactList}\small\item\em This method will decide whether floor or powerup will be on the destroyed barrels place \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_game_logic_ae2dc494b30a42358976a4fc3ce192435}{Get\+Points}} (\mbox{\hyperlink{class_bomberman_1_1_model_1_1_player}{Player}} player, \mbox{\hyperlink{namespace_bomberman_1_1_model_ae2cd98abbbc849107bf2802cb1e7a8a3}{Point\+Types}} point\+\_\+types)
+\begin{DoxyCompactList}\small\item\em This method will decide how much points will the player get \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_game_logic_a05daa619b4b1b7f5cc0fdbe3351fde57}{Explode\+Bombs}} (\mbox{\hyperlink{class_bomberman_1_1_model_1_1_bomb}{Bomb}} bomba)
+\begin{DoxyCompactList}\small\item\em This method makes the bomb explode \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_game_logic_a10cc00c77892547f704066daa8e3b211}{Expend\+Players\+Bombs\+Range}} (\mbox{\hyperlink{class_bomberman_1_1_model_1_1_player}{Player}} player)
+\begin{DoxyCompactList}\small\item\em This method can expend the players bomb range \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_game_logic_afd8c68bf3f209cf71274a879e722b548}{Step\+With\+Check}} (\mbox{\hyperlink{class_bomberman_1_1_model_1_1_player}{Player}} player, int dx, int dy)
+\begin{DoxyCompactList}\small\item\em This method will check the players step before he/she makes it \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_game_logic_ad5a13675d1f82cd948fbc5c8d92bb368}{Check\+Coordinates\+Before\+Explosion}} (int x, int y, \mbox{\hyperlink{class_bomberman_1_1_model_1_1_bomb}{Bomb}} bomba)
+\begin{DoxyCompactList}\small\item\em This method will check the maps coordinates before the explosion \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_game_logic_a287610b4fd08e0fcc5595c56924aaff4}{Clear\+Explosions}} (\mbox{\hyperlink{class_bomberman_1_1_model_1_1_bomb}{Bomb}} bomba)
+\begin{DoxyCompactList}\small\item\em This method will replace all the explosion with floor \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_game_logic_ae70a97fb33a2469c2914b7b266592ad7}{On\+Game\+Finished}} (\mbox{\hyperlink{class_bomberman_1_1_model_1_1_player}{Player}} p1, \mbox{\hyperlink{class_bomberman_1_1_model_1_1_player}{Player}} p2, int \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_game_logic_a62af8cf407009e7f8e4b444b152a81c9}{gametime}})
+\begin{DoxyCompactList}\small\item\em This method is doing the after death logic \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_game_logic_a0cd143c2c9e45fcbc7cea22b7d5f900b}{game\+Finished}} = false
+\begin{DoxyCompactList}\small\item\em Sets to true if game is finished \end{DoxyCompactList}\item 
+readonly \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_data_base_logic}{Data\+Base\+Logic}} \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_game_logic_a95da6fac5895dd6800d792cbb90e48eb}{roundrepository}}
+\begin{DoxyCompactList}\small\item\em insert got from \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_data_base_logic}{Data\+Base\+Logic}} \end{DoxyCompactList}\item 
+readonly Stopwatch \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_game_logic_a62af8cf407009e7f8e4b444b152a81c9}{gametime}}
+\begin{DoxyCompactList}\small\item\em From the begining of the game this stopwatch starts, and at the end of the game, stops and it will be on the screen \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_bomberman_1_1_business_logic_1_1_game_logic_aeb3144bb9f435f7bfc7b5ee3a583b0b4}\label{class_bomberman_1_1_business_logic_1_1_game_logic_aeb3144bb9f435f7bfc7b5ee3a583b0b4}} 
+static Random {\bfseries random}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This is a gamelogic class which doing every work of the players 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_bomberman_1_1_business_logic_1_1_game_logic_a14787126f329ddf18b91fb37caac1eee}\label{class_bomberman_1_1_business_logic_1_1_game_logic_a14787126f329ddf18b91fb37caac1eee}} 
+\index{Bomberman.BusinessLogic.GameLogic@{Bomberman.BusinessLogic.GameLogic}!GameLogic@{GameLogic}}
+\index{GameLogic@{GameLogic}!Bomberman.BusinessLogic.GameLogic@{Bomberman.BusinessLogic.GameLogic}}
+\subsubsection{\texorpdfstring{GameLogic()}{GameLogic()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Bomberman.\+Business\+Logic.\+Game\+Logic.\+Game\+Logic (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Initializes a new instance of the \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_game_logic}{Game\+Logic}} class. 
+
+\mbox{\Hypertarget{class_bomberman_1_1_business_logic_1_1_game_logic_a4f8cd01b5a5e15e22bdcd912b539aee9}\label{class_bomberman_1_1_business_logic_1_1_game_logic_a4f8cd01b5a5e15e22bdcd912b539aee9}} 
+\index{Bomberman.BusinessLogic.GameLogic@{Bomberman.BusinessLogic.GameLogic}!GameLogic@{GameLogic}}
+\index{GameLogic@{GameLogic}!Bomberman.BusinessLogic.GameLogic@{Bomberman.BusinessLogic.GameLogic}}
+\subsubsection{\texorpdfstring{GameLogic()}{GameLogic()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Bomberman.\+Business\+Logic.\+Game\+Logic.\+Game\+Logic (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_game_model}{Game\+Model}}}]{gM,  }\item[{\mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_data_base_logic}{Data\+Base\+Logic}}}]{repo }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Initializes a new instance of the \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_game_logic}{Game\+Logic}} class. This constructor is for testing. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gM} & Gamemodel mock\\
+\hline
+{\em repo} & \mbox{\hyperlink{namespace_bomberman_1_1_repository}{Repository}} mock\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_bomberman_1_1_business_logic_1_1_game_logic_ad5a13675d1f82cd948fbc5c8d92bb368}\label{class_bomberman_1_1_business_logic_1_1_game_logic_ad5a13675d1f82cd948fbc5c8d92bb368}} 
+\index{Bomberman.BusinessLogic.GameLogic@{Bomberman.BusinessLogic.GameLogic}!CheckCoordinatesBeforeExplosion@{CheckCoordinatesBeforeExplosion}}
+\index{CheckCoordinatesBeforeExplosion@{CheckCoordinatesBeforeExplosion}!Bomberman.BusinessLogic.GameLogic@{Bomberman.BusinessLogic.GameLogic}}
+\subsubsection{\texorpdfstring{CheckCoordinatesBeforeExplosion()}{CheckCoordinatesBeforeExplosion()}}
+{\footnotesize\ttfamily void Bomberman.\+Business\+Logic.\+Game\+Logic.\+Check\+Coordinates\+Before\+Explosion (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{\mbox{\hyperlink{class_bomberman_1_1_model_1_1_bomb}{Bomb}}}]{bomba }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+This method will check the maps coordinates before the explosion 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & x coordinate\\
+\hline
+{\em y} & y coordinate\\
+\hline
+{\em bomba} & the bomb which will explode\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_bomberman_1_1_business_logic_1_1_game_logic_a287610b4fd08e0fcc5595c56924aaff4}\label{class_bomberman_1_1_business_logic_1_1_game_logic_a287610b4fd08e0fcc5595c56924aaff4}} 
+\index{Bomberman.BusinessLogic.GameLogic@{Bomberman.BusinessLogic.GameLogic}!ClearExplosions@{ClearExplosions}}
+\index{ClearExplosions@{ClearExplosions}!Bomberman.BusinessLogic.GameLogic@{Bomberman.BusinessLogic.GameLogic}}
+\subsubsection{\texorpdfstring{ClearExplosions()}{ClearExplosions()}}
+{\footnotesize\ttfamily void Bomberman.\+Business\+Logic.\+Game\+Logic.\+Clear\+Explosions (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_bomberman_1_1_model_1_1_bomb}{Bomb}}}]{bomba }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+This method will replace all the explosion with floor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bomba} & the bombs range and coordinates are necessary for the loop\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_bomberman_1_1_business_logic_1_1_game_logic_a452baa5a3f7c27d25e2b3c1d0212596e}\label{class_bomberman_1_1_business_logic_1_1_game_logic_a452baa5a3f7c27d25e2b3c1d0212596e}} 
+\index{Bomberman.BusinessLogic.GameLogic@{Bomberman.BusinessLogic.GameLogic}!Control@{Control}}
+\index{Control@{Control}!Bomberman.BusinessLogic.GameLogic@{Bomberman.BusinessLogic.GameLogic}}
+\subsubsection{\texorpdfstring{Control()}{Control()}}
+{\footnotesize\ttfamily void Bomberman.\+Business\+Logic.\+Game\+Logic.\+Control (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_bomberman_1_1_business_logic_1_1_enum_ae31d051394d251f13cbd72f883375601}{Movement}}}]{movement,  }\item[{\mbox{\hyperlink{class_bomberman_1_1_model_1_1_player}{Player}}}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This method decides the action of the player who does them 
+
+
+\begin{DoxyParams}{Parameters}
+{\em movement} & This is the action that the player does\\
+\hline
+{\em p} & This is a player who does the action\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_bomberman_1_1_business_logic_1_1_game_logic_aa228edcc60791fba9e3a8495f1c6ee63}\label{class_bomberman_1_1_business_logic_1_1_game_logic_aa228edcc60791fba9e3a8495f1c6ee63}} 
+\index{Bomberman.BusinessLogic.GameLogic@{Bomberman.BusinessLogic.GameLogic}!DestroyBomb@{DestroyBomb}}
+\index{DestroyBomb@{DestroyBomb}!Bomberman.BusinessLogic.GameLogic@{Bomberman.BusinessLogic.GameLogic}}
+\subsubsection{\texorpdfstring{DestroyBomb()}{DestroyBomb()}}
+{\footnotesize\ttfamily void Bomberman.\+Business\+Logic.\+Game\+Logic.\+Destroy\+Bomb (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_bomberman_1_1_model_1_1_bomb}{Bomb}}}]{bomba }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This method is making the bombs explode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bomba} & This is the bomb which will explode\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_bomberman_1_1_business_logic_1_1_game_logic_a111f41e903e34bd84c7acd362fd0c562}\label{class_bomberman_1_1_business_logic_1_1_game_logic_a111f41e903e34bd84c7acd362fd0c562}} 
+\index{Bomberman.BusinessLogic.GameLogic@{Bomberman.BusinessLogic.GameLogic}!DropBomb@{DropBomb}}
+\index{DropBomb@{DropBomb}!Bomberman.BusinessLogic.GameLogic@{Bomberman.BusinessLogic.GameLogic}}
+\subsubsection{\texorpdfstring{DropBomb()}{DropBomb()}}
+{\footnotesize\ttfamily void Bomberman.\+Business\+Logic.\+Game\+Logic.\+Drop\+Bomb (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_bomberman_1_1_model_1_1_player}{Player}}}]{player }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+With this method, the player can drop a bomb under itself 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & This is a player who drops a bomb down\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_bomberman_1_1_business_logic_1_1_game_logic_a10cc00c77892547f704066daa8e3b211}\label{class_bomberman_1_1_business_logic_1_1_game_logic_a10cc00c77892547f704066daa8e3b211}} 
+\index{Bomberman.BusinessLogic.GameLogic@{Bomberman.BusinessLogic.GameLogic}!ExpendPlayersBombsRange@{ExpendPlayersBombsRange}}
+\index{ExpendPlayersBombsRange@{ExpendPlayersBombsRange}!Bomberman.BusinessLogic.GameLogic@{Bomberman.BusinessLogic.GameLogic}}
+\subsubsection{\texorpdfstring{ExpendPlayersBombsRange()}{ExpendPlayersBombsRange()}}
+{\footnotesize\ttfamily void Bomberman.\+Business\+Logic.\+Game\+Logic.\+Expend\+Players\+Bombs\+Range (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_bomberman_1_1_model_1_1_player}{Player}}}]{player }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+This method can expend the players bomb range 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & The player who gets the expended bombrange\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_bomberman_1_1_business_logic_1_1_game_logic_a05daa619b4b1b7f5cc0fdbe3351fde57}\label{class_bomberman_1_1_business_logic_1_1_game_logic_a05daa619b4b1b7f5cc0fdbe3351fde57}} 
+\index{Bomberman.BusinessLogic.GameLogic@{Bomberman.BusinessLogic.GameLogic}!ExplodeBombs@{ExplodeBombs}}
+\index{ExplodeBombs@{ExplodeBombs}!Bomberman.BusinessLogic.GameLogic@{Bomberman.BusinessLogic.GameLogic}}
+\subsubsection{\texorpdfstring{ExplodeBombs()}{ExplodeBombs()}}
+{\footnotesize\ttfamily void Bomberman.\+Business\+Logic.\+Game\+Logic.\+Explode\+Bombs (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_bomberman_1_1_model_1_1_bomb}{Bomb}}}]{bomba }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+This method makes the bomb explode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bomba} & This is the bomb which will explode\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_bomberman_1_1_business_logic_1_1_game_logic_ae2dc494b30a42358976a4fc3ce192435}\label{class_bomberman_1_1_business_logic_1_1_game_logic_ae2dc494b30a42358976a4fc3ce192435}} 
+\index{Bomberman.BusinessLogic.GameLogic@{Bomberman.BusinessLogic.GameLogic}!GetPoints@{GetPoints}}
+\index{GetPoints@{GetPoints}!Bomberman.BusinessLogic.GameLogic@{Bomberman.BusinessLogic.GameLogic}}
+\subsubsection{\texorpdfstring{GetPoints()}{GetPoints()}}
+{\footnotesize\ttfamily void Bomberman.\+Business\+Logic.\+Game\+Logic.\+Get\+Points (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_bomberman_1_1_model_1_1_player}{Player}}}]{player,  }\item[{\mbox{\hyperlink{namespace_bomberman_1_1_model_ae2cd98abbbc849107bf2802cb1e7a8a3}{Point\+Types}}}]{point\+\_\+types }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+This method will decide how much points will the player get 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & The player who gets the point\\
+\hline
+{\em point\+\_\+types} & The type of point\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_bomberman_1_1_business_logic_1_1_game_logic_a457b06be2502ed585fe15f6dcd5bc367}\label{class_bomberman_1_1_business_logic_1_1_game_logic_a457b06be2502ed585fe15f6dcd5bc367}} 
+\index{Bomberman.BusinessLogic.GameLogic@{Bomberman.BusinessLogic.GameLogic}!LoadGameLogic@{LoadGameLogic}}
+\index{LoadGameLogic@{LoadGameLogic}!Bomberman.BusinessLogic.GameLogic@{Bomberman.BusinessLogic.GameLogic}}
+\subsubsection{\texorpdfstring{LoadGameLogic()}{LoadGameLogic()}}
+{\footnotesize\ttfamily void Bomberman.\+Business\+Logic.\+Game\+Logic.\+Load\+Game\+Logic (\begin{DoxyParamCaption}\item[{string}]{file\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This method calls the gamemodel s Load\+Game method 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Path} & This is a filepath of the saved maps\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_bomberman_1_1_business_logic_1_1_game_logic_ae70a97fb33a2469c2914b7b266592ad7}\label{class_bomberman_1_1_business_logic_1_1_game_logic_ae70a97fb33a2469c2914b7b266592ad7}} 
+\index{Bomberman.BusinessLogic.GameLogic@{Bomberman.BusinessLogic.GameLogic}!OnGameFinished@{OnGameFinished}}
+\index{OnGameFinished@{OnGameFinished}!Bomberman.BusinessLogic.GameLogic@{Bomberman.BusinessLogic.GameLogic}}
+\subsubsection{\texorpdfstring{OnGameFinished()}{OnGameFinished()}}
+{\footnotesize\ttfamily void Bomberman.\+Business\+Logic.\+Game\+Logic.\+On\+Game\+Finished (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_bomberman_1_1_model_1_1_player}{Player}}}]{p1,  }\item[{\mbox{\hyperlink{class_bomberman_1_1_model_1_1_player}{Player}}}]{p2,  }\item[{int}]{gametime }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+This method is doing the after death logic 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p1} & player 1\\
+\hline
+{\em p2} & player 2\\
+\hline
+{\em gametime} & current gametime \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_bomberman_1_1_business_logic_1_1_game_logic_a65a7db93dd325490214d760117bca632}\label{class_bomberman_1_1_business_logic_1_1_game_logic_a65a7db93dd325490214d760117bca632}} 
+\index{Bomberman.BusinessLogic.GameLogic@{Bomberman.BusinessLogic.GameLogic}!PickUpPowerUp@{PickUpPowerUp}}
+\index{PickUpPowerUp@{PickUpPowerUp}!Bomberman.BusinessLogic.GameLogic@{Bomberman.BusinessLogic.GameLogic}}
+\subsubsection{\texorpdfstring{PickUpPowerUp()}{PickUpPowerUp()}}
+{\footnotesize\ttfamily void Bomberman.\+Business\+Logic.\+Game\+Logic.\+Pick\+Up\+Power\+Up (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_bomberman_1_1_model_1_1_player}{Player}}}]{player,  }\item[{\mbox{\hyperlink{namespace_bomberman_1_1_model_a698c97744bc885fe16cc6f385fc501ef}{Power\+Up}}}]{powerup }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This method decides what kind of powerup was picked up by the player 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & This is a player who picks up the powerup\\
+\hline
+{\em powerup} & This is a powerup which was picked up\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_bomberman_1_1_business_logic_1_1_game_logic_a8017ab77c9085d822dc17b0ad664052f}\label{class_bomberman_1_1_business_logic_1_1_game_logic_a8017ab77c9085d822dc17b0ad664052f}} 
+\index{Bomberman.BusinessLogic.GameLogic@{Bomberman.BusinessLogic.GameLogic}!PowerUpSelector@{PowerUpSelector}}
+\index{PowerUpSelector@{PowerUpSelector}!Bomberman.BusinessLogic.GameLogic@{Bomberman.BusinessLogic.GameLogic}}
+\subsubsection{\texorpdfstring{PowerUpSelector()}{PowerUpSelector()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_bomberman_1_1_model_1_1_map_object}{Map\+Object}} Bomberman.\+Business\+Logic.\+Game\+Logic.\+Power\+Up\+Selector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+This method will decide whether floor or powerup will be on the destroyed barrels place 
+
+\begin{DoxyReturn}{Returns}
+Return a plusbombpowerup or floor
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_bomberman_1_1_business_logic_1_1_game_logic_adb1ba7ad7f4a7e7b0d32c2bc6b312ac1}\label{class_bomberman_1_1_business_logic_1_1_game_logic_adb1ba7ad7f4a7e7b0d32c2bc6b312ac1}} 
+\index{Bomberman.BusinessLogic.GameLogic@{Bomberman.BusinessLogic.GameLogic}!RegenerateBomb@{RegenerateBomb}}
+\index{RegenerateBomb@{RegenerateBomb}!Bomberman.BusinessLogic.GameLogic@{Bomberman.BusinessLogic.GameLogic}}
+\subsubsection{\texorpdfstring{RegenerateBomb()}{RegenerateBomb()}}
+{\footnotesize\ttfamily void Bomberman.\+Business\+Logic.\+Game\+Logic.\+Regenerate\+Bomb (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_bomberman_1_1_model_1_1_player}{Player}}}]{player }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This method regenerates a bomb after the dropped bomb exploded 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & This is a player who gets a bomb\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_bomberman_1_1_business_logic_1_1_game_logic_a8b8614ef81f7bf80f46384cc1f440ded}\label{class_bomberman_1_1_business_logic_1_1_game_logic_a8b8614ef81f7bf80f46384cc1f440ded}} 
+\index{Bomberman.BusinessLogic.GameLogic@{Bomberman.BusinessLogic.GameLogic}!SaveGame@{SaveGame}}
+\index{SaveGame@{SaveGame}!Bomberman.BusinessLogic.GameLogic@{Bomberman.BusinessLogic.GameLogic}}
+\subsubsection{\texorpdfstring{SaveGame()}{SaveGame()}}
+{\footnotesize\ttfamily void Bomberman.\+Business\+Logic.\+Game\+Logic.\+Save\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This method calls the gamemodel s Save\+Game method 
+
+\mbox{\Hypertarget{class_bomberman_1_1_business_logic_1_1_game_logic_a1f2f37aca7ccda0825d68f75bbf5fb3d}\label{class_bomberman_1_1_business_logic_1_1_game_logic_a1f2f37aca7ccda0825d68f75bbf5fb3d}} 
+\index{Bomberman.BusinessLogic.GameLogic@{Bomberman.BusinessLogic.GameLogic}!SetupGameLogic@{SetupGameLogic}}
+\index{SetupGameLogic@{SetupGameLogic}!Bomberman.BusinessLogic.GameLogic@{Bomberman.BusinessLogic.GameLogic}}
+\subsubsection{\texorpdfstring{SetupGameLogic()}{SetupGameLogic()}}
+{\footnotesize\ttfamily void Bomberman.\+Business\+Logic.\+Game\+Logic.\+Setup\+Game\+Logic (\begin{DoxyParamCaption}\item[{string}]{file\+Path,  }\item[{string}]{p1\+\_\+name,  }\item[{string}]{p2\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This method builds up the gamingscreen ( map, players) from the default txt-\/s 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Path} & This is a filepath of the default map(s)\\
+\hline
+{\em p1\+\_\+name} & This will be a player1 s name\\
+\hline
+{\em p2\+\_\+name} & This will be a player2 s name\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_bomberman_1_1_business_logic_1_1_game_logic_a378d4ec5e7f170f0cd24de08ffdb5928}\label{class_bomberman_1_1_business_logic_1_1_game_logic_a378d4ec5e7f170f0cd24de08ffdb5928}} 
+\index{Bomberman.BusinessLogic.GameLogic@{Bomberman.BusinessLogic.GameLogic}!ShowPowerUp@{ShowPowerUp}}
+\index{ShowPowerUp@{ShowPowerUp}!Bomberman.BusinessLogic.GameLogic@{Bomberman.BusinessLogic.GameLogic}}
+\subsubsection{\texorpdfstring{ShowPowerUp()}{ShowPowerUp()}}
+{\footnotesize\ttfamily void Bomberman.\+Business\+Logic.\+Game\+Logic.\+Show\+Power\+Up (\begin{DoxyParamCaption}\item[{int}]{y,  }\item[{int}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+After Explosion this method will put powerup or floor on the destroyed barrels place 
+
+
+\begin{DoxyParams}{Parameters}
+{\em y} & This is an y coordinate of the destroyed barrel\\
+\hline
+{\em x} & This is an x coordinate of the destroyed barrel\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_bomberman_1_1_business_logic_1_1_game_logic_afd8c68bf3f209cf71274a879e722b548}\label{class_bomberman_1_1_business_logic_1_1_game_logic_afd8c68bf3f209cf71274a879e722b548}} 
+\index{Bomberman.BusinessLogic.GameLogic@{Bomberman.BusinessLogic.GameLogic}!StepWithCheck@{StepWithCheck}}
+\index{StepWithCheck@{StepWithCheck}!Bomberman.BusinessLogic.GameLogic@{Bomberman.BusinessLogic.GameLogic}}
+\subsubsection{\texorpdfstring{StepWithCheck()}{StepWithCheck()}}
+{\footnotesize\ttfamily void Bomberman.\+Business\+Logic.\+Game\+Logic.\+Step\+With\+Check (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_bomberman_1_1_model_1_1_player}{Player}}}]{player,  }\item[{int}]{dx,  }\item[{int}]{dy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+This method will check the players step before he/she makes it 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & The player whose step will be checked\\
+\hline
+{\em dx} & Step right or left\\
+\hline
+{\em dy} & Step Up or down\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_bomberman_1_1_business_logic_1_1_game_logic_a0cd143c2c9e45fcbc7cea22b7d5f900b}\label{class_bomberman_1_1_business_logic_1_1_game_logic_a0cd143c2c9e45fcbc7cea22b7d5f900b}} 
+\index{Bomberman.BusinessLogic.GameLogic@{Bomberman.BusinessLogic.GameLogic}!gameFinished@{gameFinished}}
+\index{gameFinished@{gameFinished}!Bomberman.BusinessLogic.GameLogic@{Bomberman.BusinessLogic.GameLogic}}
+\subsubsection{\texorpdfstring{gameFinished}{gameFinished}}
+{\footnotesize\ttfamily bool Bomberman.\+Business\+Logic.\+Game\+Logic.\+game\+Finished = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Sets to true if game is finished 
+
+\mbox{\Hypertarget{class_bomberman_1_1_business_logic_1_1_game_logic_a62af8cf407009e7f8e4b444b152a81c9}\label{class_bomberman_1_1_business_logic_1_1_game_logic_a62af8cf407009e7f8e4b444b152a81c9}} 
+\index{Bomberman.BusinessLogic.GameLogic@{Bomberman.BusinessLogic.GameLogic}!gametime@{gametime}}
+\index{gametime@{gametime}!Bomberman.BusinessLogic.GameLogic@{Bomberman.BusinessLogic.GameLogic}}
+\subsubsection{\texorpdfstring{gametime}{gametime}}
+{\footnotesize\ttfamily readonly Stopwatch Bomberman.\+Business\+Logic.\+Game\+Logic.\+gametime\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+From the begining of the game this stopwatch starts, and at the end of the game, stops and it will be on the screen 
+
+\mbox{\Hypertarget{class_bomberman_1_1_business_logic_1_1_game_logic_abde3e754422fcaffa997b571fb9e7010}\label{class_bomberman_1_1_business_logic_1_1_game_logic_abde3e754422fcaffa997b571fb9e7010}} 
+\index{Bomberman.BusinessLogic.GameLogic@{Bomberman.BusinessLogic.GameLogic}!gM@{gM}}
+\index{gM@{gM}!Bomberman.BusinessLogic.GameLogic@{Bomberman.BusinessLogic.GameLogic}}
+\subsubsection{\texorpdfstring{gM}{gM}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_game_model}{Game\+Model}} Bomberman.\+Business\+Logic.\+Game\+Logic.\+gM}
+
+
+
+Players and map got from the gamemodel 
+
+\mbox{\Hypertarget{class_bomberman_1_1_business_logic_1_1_game_logic_a95da6fac5895dd6800d792cbb90e48eb}\label{class_bomberman_1_1_business_logic_1_1_game_logic_a95da6fac5895dd6800d792cbb90e48eb}} 
+\index{Bomberman.BusinessLogic.GameLogic@{Bomberman.BusinessLogic.GameLogic}!roundrepository@{roundrepository}}
+\index{roundrepository@{roundrepository}!Bomberman.BusinessLogic.GameLogic@{Bomberman.BusinessLogic.GameLogic}}
+\subsubsection{\texorpdfstring{roundrepository}{roundrepository}}
+{\footnotesize\ttfamily readonly \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_data_base_logic}{Data\+Base\+Logic}} Bomberman.\+Business\+Logic.\+Game\+Logic.\+roundrepository\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+insert got from \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_data_base_logic}{Data\+Base\+Logic}} 
+
+\mbox{\Hypertarget{class_bomberman_1_1_business_logic_1_1_game_logic_acbbb40696d2e107f2340363c2e12069f}\label{class_bomberman_1_1_business_logic_1_1_game_logic_acbbb40696d2e107f2340363c2e12069f}} 
+\index{Bomberman.BusinessLogic.GameLogic@{Bomberman.BusinessLogic.GameLogic}!SoundSystem@{SoundSystem}}
+\index{SoundSystem@{SoundSystem}!Bomberman.BusinessLogic.GameLogic@{Bomberman.BusinessLogic.GameLogic}}
+\subsubsection{\texorpdfstring{SoundSystem}{SoundSystem}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_logic_classes_1_1_sound_system}{Sound\+System}} Bomberman.\+Business\+Logic.\+Game\+Logic.\+Sound\+System}
+
+
+
+Sound\+System field 
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_bomberman_1_1_business_logic_1_1_game_logic_a0c0cb930c5ff2e65420cae21fd8563e9}\label{class_bomberman_1_1_business_logic_1_1_game_logic_a0c0cb930c5ff2e65420cae21fd8563e9}} 
+\index{Bomberman.BusinessLogic.GameLogic@{Bomberman.BusinessLogic.GameLogic}!Map@{Map}}
+\index{Map@{Map}!Bomberman.BusinessLogic.GameLogic@{Bomberman.BusinessLogic.GameLogic}}
+\subsubsection{\texorpdfstring{Map}{Map}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_bomberman_1_1_model_1_1_map_object}{Map\+Object}} \mbox{[},\mbox{]} Bomberman.\+Business\+Logic.\+Game\+Logic.\+Map\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets returns map from \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_game_model}{Game\+Model}} 
+
+\mbox{\Hypertarget{class_bomberman_1_1_business_logic_1_1_game_logic_a29d052d8d9a96d2a9c268d0fa447e502}\label{class_bomberman_1_1_business_logic_1_1_game_logic_a29d052d8d9a96d2a9c268d0fa447e502}} 
+\index{Bomberman.BusinessLogic.GameLogic@{Bomberman.BusinessLogic.GameLogic}!Players@{Players}}
+\index{Players@{Players}!Bomberman.BusinessLogic.GameLogic@{Bomberman.BusinessLogic.GameLogic}}
+\subsubsection{\texorpdfstring{Players}{Players}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_bomberman_1_1_model_1_1_player}{Player}} \mbox{[}$\,$\mbox{]} Bomberman.\+Business\+Logic.\+Game\+Logic.\+Players\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets all the players from \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_game_model}{Game\+Model}} 
+
+
+
+\subsection{Event Documentation}
+\mbox{\Hypertarget{class_bomberman_1_1_business_logic_1_1_game_logic_afac06eda1eedc3b5fb9574b8e8e56f0f}\label{class_bomberman_1_1_business_logic_1_1_game_logic_afac06eda1eedc3b5fb9574b8e8e56f0f}} 
+\index{Bomberman.BusinessLogic.GameLogic@{Bomberman.BusinessLogic.GameLogic}!GameFinished@{GameFinished}}
+\index{GameFinished@{GameFinished}!Bomberman.BusinessLogic.GameLogic@{Bomberman.BusinessLogic.GameLogic}}
+\subsubsection{\texorpdfstring{GameFinished}{GameFinished}}
+{\footnotesize\ttfamily Event\+Handler Bomberman.\+Business\+Logic.\+Game\+Logic.\+Game\+Finished}
+
+
+
+This event helps ending the game 
+
+\mbox{\Hypertarget{class_bomberman_1_1_business_logic_1_1_game_logic_a7d6ca589e415c4ad23a0554fdfde91e4}\label{class_bomberman_1_1_business_logic_1_1_game_logic_a7d6ca589e415c4ad23a0554fdfde91e4}} 
+\index{Bomberman.BusinessLogic.GameLogic@{Bomberman.BusinessLogic.GameLogic}!GameStateChanged@{GameStateChanged}}
+\index{GameStateChanged@{GameStateChanged}!Bomberman.BusinessLogic.GameLogic@{Bomberman.BusinessLogic.GameLogic}}
+\subsubsection{\texorpdfstring{GameStateChanged}{GameStateChanged}}
+{\footnotesize\ttfamily Event\+Handler Bomberman.\+Business\+Logic.\+Game\+Logic.\+Game\+State\+Changed}
+
+
+
+This event helps refreshes the screen after every statechange 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Kovács\+Levente/\+Documents/oenik\+\_\+prog4\+\_\+2019\+\_\+1\+\_\+p71jvi\+\_\+u41kaf/\+Bomberman/\+Bomberman.\+Business\+Logic/\+Logic\+Classes/Game\+Logic.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="BomberManDbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Rounds">
+          <Key>
+            <PropertyRef Name="Round_ID" />
+          </Key>
+          <Property Name="Round_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Winner_Score" Type="int" />
+          <Property Name="Winner" Type="varchar" MaxLength="50" />
+          <Property Name="Loser" Type="varchar" MaxLength="50" />
+          <Property Name="Loser_Score" Type="int" />
+        </EntityType>
+        <EntityContainer Name="BomberManDbModelStoreContainer">
+          <EntitySet Name="Rounds" EntityType="Self.Rounds" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="BomberManDbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Rounds">
+          <Key>
+            <PropertyRef Name="Round_ID" />
+          </Key>
+          <Property Name="Round_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Winner_Score" Type="Int32" />
+          <Property Name="Winner" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Loser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Loser_Score" Type="Int32" />
+        </EntityType>
+        <EntityContainer Name="BomberManDbEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Rounds" EntityType="Self.Rounds" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="BomberManDbModelStoreContainer" CdmEntityContainer="BomberManDbEntities">
+          <EntitySetMapping Name="Rounds">
+            <EntityTypeMapping TypeName="BomberManDbModel.Rounds">
+              <MappingFragment StoreEntitySet="Rounds">
+                <ScalarProperty Name="Round_ID" ColumnName="Round_ID" />
+                <ScalarProperty Name="Winner_Score" ColumnName="Winner_Score" />
+                <ScalarProperty Name="Winner" ColumnName="Winner" />
+                <ScalarProperty Name="Loser" ColumnName="Loser" />
+                <ScalarProperty Name="Loser_Score" ColumnName="Loser_Score" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

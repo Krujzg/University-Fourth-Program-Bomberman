@@ -1,0 +1,103 @@
+\hypertarget{class_bomberman_1_1_business_logic_1_1_data_base_logic}{}\section{Bomberman.\+Business\+Logic.\+Data\+Base\+Logic Class Reference}
+\label{class_bomberman_1_1_business_logic_1_1_data_base_logic}\index{Bomberman.BusinessLogic.DataBaseLogic@{Bomberman.BusinessLogic.DataBaseLogic}}
+
+
+This is a Database\+Logic which calling the two crud methods from the repository  
+
+
+Inheritance diagram for Bomberman.\+Business\+Logic.\+Data\+Base\+Logic\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_bomberman_1_1_business_logic_1_1_data_base_logic}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_data_base_logic_a5e835cdb14e199501fee1aa6c642873e}{Data\+Base\+Logic}} (\mbox{\hyperlink{interface_bomberman_1_1_repository_1_1_i_repository}{I\+Repository}} repository)
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_data_base_logic}{Data\+Base\+Logic}} class. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_data_base_logic_a6a7ca20f6210022d6b45d3aba0e17a62}{Insert}} (\mbox{\hyperlink{class_bomberman_1_1_data_1_1_rounds}{Rounds}} entity)
+\begin{DoxyCompactList}\small\item\em The Gamelogic method calls this method, and this method calls the repository\textquotesingle{}s insert method \end{DoxyCompactList}\item 
+I\+Enumerable$<$ \mbox{\hyperlink{class_bomberman_1_1_data_1_1_rounds}{Rounds}} $>$ \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_data_base_logic_a7535cc3e0b6ea882d06a83a07ab4e083}{Select}} (\mbox{\hyperlink{class_bomberman_1_1_data_1_1_rounds}{Rounds}} entity)
+\begin{DoxyCompactList}\small\item\em The High\+Score\+Window calls this method, and this method calls the repository\textquotesingle{}s select method \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_bomberman_1_1_business_logic_1_1_data_base_logic_a2c0983563a67a52e1e419d6da939e5a6}\label{class_bomberman_1_1_business_logic_1_1_data_base_logic_a2c0983563a67a52e1e419d6da939e5a6}} 
+readonly \mbox{\hyperlink{interface_bomberman_1_1_repository_1_1_i_repository}{I\+Repository}} {\bfseries repository}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This is a Database\+Logic which calling the two crud methods from the repository 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_bomberman_1_1_business_logic_1_1_data_base_logic_a5e835cdb14e199501fee1aa6c642873e}\label{class_bomberman_1_1_business_logic_1_1_data_base_logic_a5e835cdb14e199501fee1aa6c642873e}} 
+\index{Bomberman.BusinessLogic.DataBaseLogic@{Bomberman.BusinessLogic.DataBaseLogic}!DataBaseLogic@{DataBaseLogic}}
+\index{DataBaseLogic@{DataBaseLogic}!Bomberman.BusinessLogic.DataBaseLogic@{Bomberman.BusinessLogic.DataBaseLogic}}
+\subsubsection{\texorpdfstring{DataBaseLogic()}{DataBaseLogic()}}
+{\footnotesize\ttfamily Bomberman.\+Business\+Logic.\+Data\+Base\+Logic.\+Data\+Base\+Logic (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_bomberman_1_1_repository_1_1_i_repository}{I\+Repository}}}]{repository }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Initializes a new instance of the \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_data_base_logic}{Data\+Base\+Logic}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em repository} & It gets an I\+Repository type ,which will transfer the functions to the \mbox{\hyperlink{namespace_bomberman_1_1_repository}{Repository}}\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_bomberman_1_1_business_logic_1_1_data_base_logic_a6a7ca20f6210022d6b45d3aba0e17a62}\label{class_bomberman_1_1_business_logic_1_1_data_base_logic_a6a7ca20f6210022d6b45d3aba0e17a62}} 
+\index{Bomberman.BusinessLogic.DataBaseLogic@{Bomberman.BusinessLogic.DataBaseLogic}!Insert@{Insert}}
+\index{Insert@{Insert}!Bomberman.BusinessLogic.DataBaseLogic@{Bomberman.BusinessLogic.DataBaseLogic}}
+\subsubsection{\texorpdfstring{Insert()}{Insert()}}
+{\footnotesize\ttfamily bool Bomberman.\+Business\+Logic.\+Data\+Base\+Logic.\+Insert (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_bomberman_1_1_data_1_1_rounds}{Rounds}}}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The Gamelogic method calls this method, and this method calls the repository\textquotesingle{}s insert method 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & This entity is a Rounds type item\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return true if the called method from the repository is successful, else it returns falses
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_bomberman_1_1_business_logic_1_1_i_data_base_logic_a1b8fde3e85c9ba91acbf4185a227f23b}{Bomberman.\+Business\+Logic.\+I\+Data\+Base\+Logic}}.
+
+\mbox{\Hypertarget{class_bomberman_1_1_business_logic_1_1_data_base_logic_a7535cc3e0b6ea882d06a83a07ab4e083}\label{class_bomberman_1_1_business_logic_1_1_data_base_logic_a7535cc3e0b6ea882d06a83a07ab4e083}} 
+\index{Bomberman.BusinessLogic.DataBaseLogic@{Bomberman.BusinessLogic.DataBaseLogic}!Select@{Select}}
+\index{Select@{Select}!Bomberman.BusinessLogic.DataBaseLogic@{Bomberman.BusinessLogic.DataBaseLogic}}
+\subsubsection{\texorpdfstring{Select()}{Select()}}
+{\footnotesize\ttfamily I\+Enumerable$<$\mbox{\hyperlink{class_bomberman_1_1_data_1_1_rounds}{Rounds}}$>$ Bomberman.\+Business\+Logic.\+Data\+Base\+Logic.\+Select (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_bomberman_1_1_data_1_1_rounds}{Rounds}}}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The High\+Score\+Window calls this method, and this method calls the repository\textquotesingle{}s select method 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & This entity is a Rounds type item \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+It returns a Rounds Collection from the db
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_bomberman_1_1_business_logic_1_1_i_data_base_logic_aaa56c20c9b41d5f4a3c2522f450ecb41}{Bomberman.\+Business\+Logic.\+I\+Data\+Base\+Logic}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Kovács\+Levente/\+Documents/oenik\+\_\+prog4\+\_\+2019\+\_\+1\+\_\+p71jvi\+\_\+u41kaf/\+Bomberman/\+Bomberman.\+Business\+Logic/\+Logic\+Classes/Data\+Base\+Logic.\+cs\end{DoxyCompactItemize}

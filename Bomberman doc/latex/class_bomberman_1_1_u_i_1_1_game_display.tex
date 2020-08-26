@@ -1,0 +1,185 @@
+\hypertarget{class_bomberman_1_1_u_i_1_1_game_display}{}\section{Bomberman.\+U\+I.\+Game\+Display Class Reference}
+\label{class_bomberman_1_1_u_i_1_1_game_display}\index{Bomberman.UI.GameDisplay@{Bomberman.UI.GameDisplay}}
+
+
+This is the game\+Display class that can draw pictures on the screen  
+
+
+Inheritance diagram for Bomberman.\+U\+I.\+Game\+Display\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_bomberman_1_1_u_i_1_1_game_display}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Image\+Brush \mbox{\hyperlink{class_bomberman_1_1_u_i_1_1_game_display_a913d517f4a4e170c1efb6798c8822454}{Get\+Brush}} (string file\+Path)
+\begin{DoxyCompactList}\small\item\em Gets the image from file \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static readonly Dependency\+Property \mbox{\hyperlink{class_bomberman_1_1_u_i_1_1_game_display_a2f077cba4dd5b952c75a3a75b98269f8}{Game\+Logic\+Property}}
+\begin{DoxyCompactList}\small\item\em Gamelogic\+Porperty \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_bomberman_1_1_u_i_1_1_game_display_aece76d3ef75b0e12e43a281856e11a8e}{On\+Render}} (Drawing\+Context drawing\+Context)
+\begin{DoxyCompactList}\small\item\em Decides which picture has to be drawn \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_game_logic}{Game\+Logic}} \mbox{\hyperlink{class_bomberman_1_1_u_i_1_1_game_display_ad5cdf4b412fd89ac0d6555bc965aae13}{GL}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets gamelogic \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_bomberman_1_1_u_i_1_1_game_display_a6531b08c32679bdb8721eab5c9ecebcd}{G\+L\+\_\+\+Game\+State\+Changed}} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Invokes Invalidate\+Visual\+Method \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bomberman_1_1_u_i_1_1_game_display_ab916a4d1e444517e8a5f1791ecedf672}{Draw\+Item}} (Drawing\+Context drawing\+Context, string filename, double tile\+\_\+width, double tile\+\_\+height, int i, int j)
+\begin{DoxyCompactList}\small\item\em Simple version of draw\+Rectangle \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bomberman_1_1_u_i_1_1_game_display_a5925b011dc8c2c259af92a4bbd0d1c2c}{Draw\+Floor}} (Drawing\+Context drawing\+Context, double tile\+\_\+width, double tile\+\_\+height, int i, int j)
+\begin{DoxyCompactList}\small\item\em Simple version of draw\+Rectangle \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This is the game\+Display class that can draw pictures on the screen 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_bomberman_1_1_u_i_1_1_game_display_a5925b011dc8c2c259af92a4bbd0d1c2c}\label{class_bomberman_1_1_u_i_1_1_game_display_a5925b011dc8c2c259af92a4bbd0d1c2c}} 
+\index{Bomberman.UI.GameDisplay@{Bomberman.UI.GameDisplay}!DrawFloor@{DrawFloor}}
+\index{DrawFloor@{DrawFloor}!Bomberman.UI.GameDisplay@{Bomberman.UI.GameDisplay}}
+\subsubsection{\texorpdfstring{DrawFloor()}{DrawFloor()}}
+{\footnotesize\ttfamily void Bomberman.\+U\+I.\+Game\+Display.\+Draw\+Floor (\begin{DoxyParamCaption}\item[{Drawing\+Context}]{drawing\+Context,  }\item[{double}]{tile\+\_\+width,  }\item[{double}]{tile\+\_\+height,  }\item[{int}]{i,  }\item[{int}]{j }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Simple version of draw\+Rectangle 
+
+
+\begin{DoxyParams}{Parameters}
+{\em drawing\+Context} & drawing\+Context\\
+\hline
+{\em tile\+\_\+width} & tile\+\_\+width\\
+\hline
+{\em tile\+\_\+height} & tile\+\_\+height\\
+\hline
+{\em i} & i\\
+\hline
+{\em j} & j\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_bomberman_1_1_u_i_1_1_game_display_ab916a4d1e444517e8a5f1791ecedf672}\label{class_bomberman_1_1_u_i_1_1_game_display_ab916a4d1e444517e8a5f1791ecedf672}} 
+\index{Bomberman.UI.GameDisplay@{Bomberman.UI.GameDisplay}!DrawItem@{DrawItem}}
+\index{DrawItem@{DrawItem}!Bomberman.UI.GameDisplay@{Bomberman.UI.GameDisplay}}
+\subsubsection{\texorpdfstring{DrawItem()}{DrawItem()}}
+{\footnotesize\ttfamily void Bomberman.\+U\+I.\+Game\+Display.\+Draw\+Item (\begin{DoxyParamCaption}\item[{Drawing\+Context}]{drawing\+Context,  }\item[{string}]{filename,  }\item[{double}]{tile\+\_\+width,  }\item[{double}]{tile\+\_\+height,  }\item[{int}]{i,  }\item[{int}]{j }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Simple version of draw\+Rectangle 
+
+
+\begin{DoxyParams}{Parameters}
+{\em drawing\+Context} & drawing\+Context\\
+\hline
+{\em filename} & filename\\
+\hline
+{\em tile\+\_\+width} & tile\+\_\+width\\
+\hline
+{\em tile\+\_\+height} & tile\+\_\+height\\
+\hline
+{\em i} & i\\
+\hline
+{\em j} & j\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_bomberman_1_1_u_i_1_1_game_display_a913d517f4a4e170c1efb6798c8822454}\label{class_bomberman_1_1_u_i_1_1_game_display_a913d517f4a4e170c1efb6798c8822454}} 
+\index{Bomberman.UI.GameDisplay@{Bomberman.UI.GameDisplay}!GetBrush@{GetBrush}}
+\index{GetBrush@{GetBrush}!Bomberman.UI.GameDisplay@{Bomberman.UI.GameDisplay}}
+\subsubsection{\texorpdfstring{GetBrush()}{GetBrush()}}
+{\footnotesize\ttfamily Image\+Brush Bomberman.\+U\+I.\+Game\+Display.\+Get\+Brush (\begin{DoxyParamCaption}\item[{string}]{file\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the image from file 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Path} & file path of the picture\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An Image\+Brush
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_bomberman_1_1_u_i_1_1_game_display_a6531b08c32679bdb8721eab5c9ecebcd}\label{class_bomberman_1_1_u_i_1_1_game_display_a6531b08c32679bdb8721eab5c9ecebcd}} 
+\index{Bomberman.UI.GameDisplay@{Bomberman.UI.GameDisplay}!GL\_GameStateChanged@{GL\_GameStateChanged}}
+\index{GL\_GameStateChanged@{GL\_GameStateChanged}!Bomberman.UI.GameDisplay@{Bomberman.UI.GameDisplay}}
+\subsubsection{\texorpdfstring{GL\_GameStateChanged()}{GL\_GameStateChanged()}}
+{\footnotesize\ttfamily void Bomberman.\+U\+I.\+Game\+Display.\+G\+L\+\_\+\+Game\+State\+Changed (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Invokes Invalidate\+Visual\+Method 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & sender \\
+\hline
+{\em e} & e \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_bomberman_1_1_u_i_1_1_game_display_aece76d3ef75b0e12e43a281856e11a8e}\label{class_bomberman_1_1_u_i_1_1_game_display_aece76d3ef75b0e12e43a281856e11a8e}} 
+\index{Bomberman.UI.GameDisplay@{Bomberman.UI.GameDisplay}!OnRender@{OnRender}}
+\index{OnRender@{OnRender}!Bomberman.UI.GameDisplay@{Bomberman.UI.GameDisplay}}
+\subsubsection{\texorpdfstring{OnRender()}{OnRender()}}
+{\footnotesize\ttfamily override void Bomberman.\+U\+I.\+Game\+Display.\+On\+Render (\begin{DoxyParamCaption}\item[{Drawing\+Context}]{drawing\+Context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Decides which picture has to be drawn 
+
+
+\begin{DoxyParams}{Parameters}
+{\em drawing\+Context} & drawingcontext\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_bomberman_1_1_u_i_1_1_game_display_a2f077cba4dd5b952c75a3a75b98269f8}\label{class_bomberman_1_1_u_i_1_1_game_display_a2f077cba4dd5b952c75a3a75b98269f8}} 
+\index{Bomberman.UI.GameDisplay@{Bomberman.UI.GameDisplay}!GameLogicProperty@{GameLogicProperty}}
+\index{GameLogicProperty@{GameLogicProperty}!Bomberman.UI.GameDisplay@{Bomberman.UI.GameDisplay}}
+\subsubsection{\texorpdfstring{GameLogicProperty}{GameLogicProperty}}
+{\footnotesize\ttfamily readonly Dependency\+Property Bomberman.\+U\+I.\+Game\+Display.\+Game\+Logic\+Property\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{            DependencyProperty.Register(\textcolor{stringliteral}{"Logic"}, typeof(GameLogic), typeof(GameDisplay), \textcolor{keyword}{new} PropertyMetadata(\textcolor{keyword}{null}))}
+
+\end{DoxyCode}
+
+
+Gamelogic\+Porperty 
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_bomberman_1_1_u_i_1_1_game_display_ad5cdf4b412fd89ac0d6555bc965aae13}\label{class_bomberman_1_1_u_i_1_1_game_display_ad5cdf4b412fd89ac0d6555bc965aae13}} 
+\index{Bomberman.UI.GameDisplay@{Bomberman.UI.GameDisplay}!GL@{GL}}
+\index{GL@{GL}!Bomberman.UI.GameDisplay@{Bomberman.UI.GameDisplay}}
+\subsubsection{\texorpdfstring{GL}{GL}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_game_logic}{Game\+Logic}} Bomberman.\+U\+I.\+Game\+Display.\+GL\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets gamelogic 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Kovács\+Levente/\+Documents/oenik\+\_\+prog4\+\_\+2019\+\_\+1\+\_\+p71jvi\+\_\+u41kaf/\+Bomberman/\+Bomberman.\+U\+I/Game\+Display.\+cs\end{DoxyCompactItemize}

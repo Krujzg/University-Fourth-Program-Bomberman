@@ -1,0 +1,178 @@
+\hypertarget{class_bomberman_1_1_model_1_1_player}{}\section{Bomberman.\+Model.\+Player Class Reference}
+\label{class_bomberman_1_1_model_1_1_player}\index{Bomberman.Model.Player@{Bomberman.Model.Player}}
+
+
+Representation of a player on the map.  
+
+
+Inheritance diagram for Bomberman.\+Model.\+Player\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_bomberman_1_1_model_1_1_player}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_bomberman_1_1_model_1_1_player_a98b6601d7cd1bce7d53c4b6a6fa5dd17}{Player}} (int x, int y, string name, string color)
+\begin{DoxyCompactList}\small\item\em Creates an instance of a \mbox{\hyperlink{class_bomberman_1_1_model_1_1_player}{Player}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{class_bomberman_1_1_model_1_1_bomb}{Bomb}} $>$ \mbox{\hyperlink{class_bomberman_1_1_model_1_1_player_abc2e7df14d0287f8a280f01cf17f2786}{Bombs}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em List of droppable bombs \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_bomberman_1_1_model_1_1_player_a079b3fc434620204adbccaf90d3e6ff2}{Got\+Hit}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Indicates if the player got hit \end{DoxyCompactList}\item 
+Observable\+Collection$<$ \mbox{\hyperlink{namespace_bomberman_1_1_model_a698c97744bc885fe16cc6f385fc501ef}{Power\+Up}} $>$ \mbox{\hyperlink{class_bomberman_1_1_model_1_1_player_a0a61512a43b98f8545923bade35bf371}{Power\+Ups}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Collection of powerups \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_bomberman_1_1_model_1_1_player_ad756da2015e4614e2550b2425e9fdc31}{Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets actual player\textquotesingle{}s name \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_bomberman_1_1_model_1_1_player_abecd3e3bb2aba7b79826b1540bea0e1a}{Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets actual player\textquotesingle{}s color \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_bomberman_1_1_model_1_1_player_a6e24240f914d0b879557a93eb2f03479}{PosX}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em X comonent of player\textquotesingle{}s coordinates \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_bomberman_1_1_model_1_1_player_ad5e6234ab27cbfa407643132a77b1651}{PosY}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Y comonent of player\textquotesingle{}s coordinates \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_bomberman_1_1_model_1_1_player_a82d136aad5ff0fb6709a8a41cde5e7fc}{Score}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the amount of points the player has \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_bomberman_1_1_model_1_1_player_a72a4cfd9b2ad1321d2945a056940df5c}{Speed}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the player\textquotesingle{}s speed \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_bomberman_1_1_model_1_1_player_a3864e188645cc25176aef083c934bbe7}{Bomb\+Range}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Changes the range of a player\textquotesingle{}s bombs \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Representation of a player on the map. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_bomberman_1_1_model_1_1_player_a98b6601d7cd1bce7d53c4b6a6fa5dd17}\label{class_bomberman_1_1_model_1_1_player_a98b6601d7cd1bce7d53c4b6a6fa5dd17}} 
+\index{Bomberman.Model.Player@{Bomberman.Model.Player}!Player@{Player}}
+\index{Player@{Player}!Bomberman.Model.Player@{Bomberman.Model.Player}}
+\subsubsection{\texorpdfstring{Player()}{Player()}}
+{\footnotesize\ttfamily Bomberman.\+Model.\+Player.\+Player (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{string}]{name,  }\item[{string}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Creates an instance of a \mbox{\hyperlink{class_bomberman_1_1_model_1_1_player}{Player}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & X comonent of player\textquotesingle{}s coordinates\\
+\hline
+{\em y} & Y comonent of player\textquotesingle{}s coordinates\\
+\hline
+{\em name} & Name of the player\\
+\hline
+{\em color} & Color of the player\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_bomberman_1_1_model_1_1_player_a3864e188645cc25176aef083c934bbe7}\label{class_bomberman_1_1_model_1_1_player_a3864e188645cc25176aef083c934bbe7}} 
+\index{Bomberman.Model.Player@{Bomberman.Model.Player}!BombRange@{BombRange}}
+\index{BombRange@{BombRange}!Bomberman.Model.Player@{Bomberman.Model.Player}}
+\subsubsection{\texorpdfstring{BombRange}{BombRange}}
+{\footnotesize\ttfamily int Bomberman.\+Model.\+Player.\+Bomb\+Range\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Changes the range of a player\textquotesingle{}s bombs 
+
+\mbox{\Hypertarget{class_bomberman_1_1_model_1_1_player_abc2e7df14d0287f8a280f01cf17f2786}\label{class_bomberman_1_1_model_1_1_player_abc2e7df14d0287f8a280f01cf17f2786}} 
+\index{Bomberman.Model.Player@{Bomberman.Model.Player}!Bombs@{Bombs}}
+\index{Bombs@{Bombs}!Bomberman.Model.Player@{Bomberman.Model.Player}}
+\subsubsection{\texorpdfstring{Bombs}{Bombs}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_bomberman_1_1_model_1_1_bomb}{Bomb}}$>$ Bomberman.\+Model.\+Player.\+Bombs\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+List of droppable bombs 
+
+\mbox{\Hypertarget{class_bomberman_1_1_model_1_1_player_abecd3e3bb2aba7b79826b1540bea0e1a}\label{class_bomberman_1_1_model_1_1_player_abecd3e3bb2aba7b79826b1540bea0e1a}} 
+\index{Bomberman.Model.Player@{Bomberman.Model.Player}!Color@{Color}}
+\index{Color@{Color}!Bomberman.Model.Player@{Bomberman.Model.Player}}
+\subsubsection{\texorpdfstring{Color}{Color}}
+{\footnotesize\ttfamily string Bomberman.\+Model.\+Player.\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets actual player\textquotesingle{}s color 
+
+\mbox{\Hypertarget{class_bomberman_1_1_model_1_1_player_a079b3fc434620204adbccaf90d3e6ff2}\label{class_bomberman_1_1_model_1_1_player_a079b3fc434620204adbccaf90d3e6ff2}} 
+\index{Bomberman.Model.Player@{Bomberman.Model.Player}!GotHit@{GotHit}}
+\index{GotHit@{GotHit}!Bomberman.Model.Player@{Bomberman.Model.Player}}
+\subsubsection{\texorpdfstring{GotHit}{GotHit}}
+{\footnotesize\ttfamily bool Bomberman.\+Model.\+Player.\+Got\+Hit\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Indicates if the player got hit 
+
+\mbox{\Hypertarget{class_bomberman_1_1_model_1_1_player_ad756da2015e4614e2550b2425e9fdc31}\label{class_bomberman_1_1_model_1_1_player_ad756da2015e4614e2550b2425e9fdc31}} 
+\index{Bomberman.Model.Player@{Bomberman.Model.Player}!Name@{Name}}
+\index{Name@{Name}!Bomberman.Model.Player@{Bomberman.Model.Player}}
+\subsubsection{\texorpdfstring{Name}{Name}}
+{\footnotesize\ttfamily string Bomberman.\+Model.\+Player.\+Name\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets actual player\textquotesingle{}s name 
+
+\mbox{\Hypertarget{class_bomberman_1_1_model_1_1_player_a6e24240f914d0b879557a93eb2f03479}\label{class_bomberman_1_1_model_1_1_player_a6e24240f914d0b879557a93eb2f03479}} 
+\index{Bomberman.Model.Player@{Bomberman.Model.Player}!PosX@{PosX}}
+\index{PosX@{PosX}!Bomberman.Model.Player@{Bomberman.Model.Player}}
+\subsubsection{\texorpdfstring{PosX}{PosX}}
+{\footnotesize\ttfamily int Bomberman.\+Model.\+Player.\+PosX\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+X comonent of player\textquotesingle{}s coordinates 
+
+\mbox{\Hypertarget{class_bomberman_1_1_model_1_1_player_ad5e6234ab27cbfa407643132a77b1651}\label{class_bomberman_1_1_model_1_1_player_ad5e6234ab27cbfa407643132a77b1651}} 
+\index{Bomberman.Model.Player@{Bomberman.Model.Player}!PosY@{PosY}}
+\index{PosY@{PosY}!Bomberman.Model.Player@{Bomberman.Model.Player}}
+\subsubsection{\texorpdfstring{PosY}{PosY}}
+{\footnotesize\ttfamily int Bomberman.\+Model.\+Player.\+PosY\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Y comonent of player\textquotesingle{}s coordinates 
+
+\mbox{\Hypertarget{class_bomberman_1_1_model_1_1_player_a0a61512a43b98f8545923bade35bf371}\label{class_bomberman_1_1_model_1_1_player_a0a61512a43b98f8545923bade35bf371}} 
+\index{Bomberman.Model.Player@{Bomberman.Model.Player}!PowerUps@{PowerUps}}
+\index{PowerUps@{PowerUps}!Bomberman.Model.Player@{Bomberman.Model.Player}}
+\subsubsection{\texorpdfstring{PowerUps}{PowerUps}}
+{\footnotesize\ttfamily Observable\+Collection$<$\mbox{\hyperlink{namespace_bomberman_1_1_model_a698c97744bc885fe16cc6f385fc501ef}{Power\+Up}}$>$ Bomberman.\+Model.\+Player.\+Power\+Ups\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Collection of powerups 
+
+\mbox{\Hypertarget{class_bomberman_1_1_model_1_1_player_a82d136aad5ff0fb6709a8a41cde5e7fc}\label{class_bomberman_1_1_model_1_1_player_a82d136aad5ff0fb6709a8a41cde5e7fc}} 
+\index{Bomberman.Model.Player@{Bomberman.Model.Player}!Score@{Score}}
+\index{Score@{Score}!Bomberman.Model.Player@{Bomberman.Model.Player}}
+\subsubsection{\texorpdfstring{Score}{Score}}
+{\footnotesize\ttfamily int Bomberman.\+Model.\+Player.\+Score\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the amount of points the player has 
+
+\mbox{\Hypertarget{class_bomberman_1_1_model_1_1_player_a72a4cfd9b2ad1321d2945a056940df5c}\label{class_bomberman_1_1_model_1_1_player_a72a4cfd9b2ad1321d2945a056940df5c}} 
+\index{Bomberman.Model.Player@{Bomberman.Model.Player}!Speed@{Speed}}
+\index{Speed@{Speed}!Bomberman.Model.Player@{Bomberman.Model.Player}}
+\subsubsection{\texorpdfstring{Speed}{Speed}}
+{\footnotesize\ttfamily int Bomberman.\+Model.\+Player.\+Speed\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the player\textquotesingle{}s speed 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Kovács\+Levente/\+Documents/oenik\+\_\+prog4\+\_\+2019\+\_\+1\+\_\+p71jvi\+\_\+u41kaf/\+Bomberman/\+Bomberman.\+Model/Player.\+cs\end{DoxyCompactItemize}

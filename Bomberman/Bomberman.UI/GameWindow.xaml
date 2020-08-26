@@ -1,0 +1,19 @@
+﻿<Window x:Class="Bomberman.UI.GameWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bomberman.UI"
+        xmlns:BusinessLogic="clr-namespace:Bomberman.BusinessLogic;assembly=Bomberman.BusinessLogic"
+        mc:Ignorable="d"
+        Title="GameWindow" Height="450" Width="800"
+        WindowState="Maximized"
+        WindowStyle="None"
+        KeyDown="Window_KeyDown">
+    <Window.Resources>
+        <BusinessLogic:GameLogic x:Key="logic"/>
+    </Window.Resources>
+    <Grid>
+        <local:GameDisplay GL="{StaticResource logic}" />
+    </Grid>
+</Window>

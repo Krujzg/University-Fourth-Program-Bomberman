@@ -1,0 +1,177 @@
+\hypertarget{class_bomberman_1_1_business_logic_1_1_game_model}{}\section{Bomberman.\+Business\+Logic.\+Game\+Model Class Reference}
+\label{class_bomberman_1_1_business_logic_1_1_game_model}\index{Bomberman.BusinessLogic.GameModel@{Bomberman.BusinessLogic.GameModel}}
+
+
+This is a \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_game_model}{Game\+Model}}, which will create the map and the players. It can also store and save games  
+
+
+Inheritance diagram for Bomberman.\+Business\+Logic.\+Game\+Model\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_bomberman_1_1_business_logic_1_1_game_model}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_game_model_acadffe349bcbe6f81eca43d7f57b2763}{Get\+Map}} (string file\+Path)
+\begin{DoxyCompactList}\small\item\em This method is building the playground (map) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_game_model_a77b69dcba720a486db46fadeeb56845b}{Load\+Game}} (string file\+Path)
+\begin{DoxyCompactList}\small\item\em This method is Loads a Game from txt \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_bomberman_1_1_model_1_1_map_object}{Map\+Object}} \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_game_model_a11dc816885d5b87ba3a586326a3913e4}{Convert\+From\+Char}} (char c, int x, int y)
+\begin{DoxyCompactList}\small\item\em This method convert a charachter from the txt to Mapobjects \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_game_model_a4fbace2001a33d4a334062a0cd1b4323}{Convert\+To\+String}} (\mbox{\hyperlink{class_bomberman_1_1_model_1_1_map_object}{Map\+Object}} map\+Object)
+\begin{DoxyCompactList}\small\item\em This method is making a txt file from the current map \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_game_model_a7a4737ede67178c084860b69b5feef15}{Save\+Game}} ()
+\begin{DoxyCompactList}\small\item\em This method creating a savedgame txt from the current map \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_bomberman_1_1_model_1_1_player}{Player}} \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_game_model_a558c278098b639d6b16e3495ed9a2202}{Players}} = new \mbox{\hyperlink{class_bomberman_1_1_model_1_1_player}{Player}}\mbox{[}2\mbox{]}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the players in the game \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_bomberman_1_1_model_1_1_map_object}{Map\+Object}} \mbox{[},\mbox{]} \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_game_model_a2dab17c97f5ac55f447bf915ea67f4be}{Map}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the map in the game \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_bomberman_1_1_model_1_1_map_object}{Map\+Object}} \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_game_model_ae901c4a65a88329263aab41f5670b29d}{Get\+Wall\+Or\+Floor}} ()
+\begin{DoxyCompactList}\small\item\em This method makes a barrel or a floor randomly \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_bomberman_1_1_business_logic_1_1_game_model_a9f3de2718c1596fab4b526b312577b8d}\label{class_bomberman_1_1_business_logic_1_1_game_model_a9f3de2718c1596fab4b526b312577b8d}} 
+static Random {\bfseries rnd} = new Random()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This is a \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_game_model}{Game\+Model}}, which will create the map and the players. It can also store and save games 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_bomberman_1_1_business_logic_1_1_game_model_a11dc816885d5b87ba3a586326a3913e4}\label{class_bomberman_1_1_business_logic_1_1_game_model_a11dc816885d5b87ba3a586326a3913e4}} 
+\index{Bomberman.BusinessLogic.GameModel@{Bomberman.BusinessLogic.GameModel}!ConvertFromChar@{ConvertFromChar}}
+\index{ConvertFromChar@{ConvertFromChar}!Bomberman.BusinessLogic.GameModel@{Bomberman.BusinessLogic.GameModel}}
+\subsubsection{\texorpdfstring{ConvertFromChar()}{ConvertFromChar()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_bomberman_1_1_model_1_1_map_object}{Map\+Object}} Bomberman.\+Business\+Logic.\+Game\+Model.\+Convert\+From\+Char (\begin{DoxyParamCaption}\item[{char}]{c,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This method convert a charachter from the txt to Mapobjects 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & charachter from the txt \\
+\hline
+{\em x} & x coordinate\\
+\hline
+{\em y} & y coordinate\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The Map\+Objext converted from the input charachter
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_bomberman_1_1_business_logic_1_1_game_model_a4fbace2001a33d4a334062a0cd1b4323}\label{class_bomberman_1_1_business_logic_1_1_game_model_a4fbace2001a33d4a334062a0cd1b4323}} 
+\index{Bomberman.BusinessLogic.GameModel@{Bomberman.BusinessLogic.GameModel}!ConvertToString@{ConvertToString}}
+\index{ConvertToString@{ConvertToString}!Bomberman.BusinessLogic.GameModel@{Bomberman.BusinessLogic.GameModel}}
+\subsubsection{\texorpdfstring{ConvertToString()}{ConvertToString()}}
+{\footnotesize\ttfamily string Bomberman.\+Business\+Logic.\+Game\+Model.\+Convert\+To\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_bomberman_1_1_model_1_1_map_object}{Map\+Object}}}]{map\+Object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This method is making a txt file from the current map 
+
+
+\begin{DoxyParams}{Parameters}
+{\em map\+Object} & This method gets a mapobject and decides its type\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+It returns a string to be written in the txt
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_bomberman_1_1_business_logic_1_1_game_model_acadffe349bcbe6f81eca43d7f57b2763}\label{class_bomberman_1_1_business_logic_1_1_game_model_acadffe349bcbe6f81eca43d7f57b2763}} 
+\index{Bomberman.BusinessLogic.GameModel@{Bomberman.BusinessLogic.GameModel}!GetMap@{GetMap}}
+\index{GetMap@{GetMap}!Bomberman.BusinessLogic.GameModel@{Bomberman.BusinessLogic.GameModel}}
+\subsubsection{\texorpdfstring{GetMap()}{GetMap()}}
+{\footnotesize\ttfamily void Bomberman.\+Business\+Logic.\+Game\+Model.\+Get\+Map (\begin{DoxyParamCaption}\item[{string}]{file\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This method is building the playground (map) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Path} & It is the path of the saved file\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_bomberman_1_1_business_logic_1_1_i_game_model_ad00b9948871adc4b67dc0ef4ed6960ab}{Bomberman.\+Business\+Logic.\+I\+Game\+Model}}.
+
+\mbox{\Hypertarget{class_bomberman_1_1_business_logic_1_1_game_model_ae901c4a65a88329263aab41f5670b29d}\label{class_bomberman_1_1_business_logic_1_1_game_model_ae901c4a65a88329263aab41f5670b29d}} 
+\index{Bomberman.BusinessLogic.GameModel@{Bomberman.BusinessLogic.GameModel}!GetWallOrFloor@{GetWallOrFloor}}
+\index{GetWallOrFloor@{GetWallOrFloor}!Bomberman.BusinessLogic.GameModel@{Bomberman.BusinessLogic.GameModel}}
+\subsubsection{\texorpdfstring{GetWallOrFloor()}{GetWallOrFloor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_bomberman_1_1_model_1_1_map_object}{Map\+Object}} Bomberman.\+Business\+Logic.\+Game\+Model.\+Get\+Wall\+Or\+Floor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+This method makes a barrel or a floor randomly 
+
+\begin{DoxyReturn}{Returns}
+barrel or floor 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_bomberman_1_1_business_logic_1_1_game_model_a77b69dcba720a486db46fadeeb56845b}\label{class_bomberman_1_1_business_logic_1_1_game_model_a77b69dcba720a486db46fadeeb56845b}} 
+\index{Bomberman.BusinessLogic.GameModel@{Bomberman.BusinessLogic.GameModel}!LoadGame@{LoadGame}}
+\index{LoadGame@{LoadGame}!Bomberman.BusinessLogic.GameModel@{Bomberman.BusinessLogic.GameModel}}
+\subsubsection{\texorpdfstring{LoadGame()}{LoadGame()}}
+{\footnotesize\ttfamily void Bomberman.\+Business\+Logic.\+Game\+Model.\+Load\+Game (\begin{DoxyParamCaption}\item[{string}]{file\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This method is Loads a Game from txt 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Path} & This is a txt-\/s filepath \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_bomberman_1_1_business_logic_1_1_game_model_a7a4737ede67178c084860b69b5feef15}\label{class_bomberman_1_1_business_logic_1_1_game_model_a7a4737ede67178c084860b69b5feef15}} 
+\index{Bomberman.BusinessLogic.GameModel@{Bomberman.BusinessLogic.GameModel}!SaveGame@{SaveGame}}
+\index{SaveGame@{SaveGame}!Bomberman.BusinessLogic.GameModel@{Bomberman.BusinessLogic.GameModel}}
+\subsubsection{\texorpdfstring{SaveGame()}{SaveGame()}}
+{\footnotesize\ttfamily void Bomberman.\+Business\+Logic.\+Game\+Model.\+Save\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This method creating a savedgame txt from the current map 
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_bomberman_1_1_business_logic_1_1_game_model_a2dab17c97f5ac55f447bf915ea67f4be}\label{class_bomberman_1_1_business_logic_1_1_game_model_a2dab17c97f5ac55f447bf915ea67f4be}} 
+\index{Bomberman.BusinessLogic.GameModel@{Bomberman.BusinessLogic.GameModel}!Map@{Map}}
+\index{Map@{Map}!Bomberman.BusinessLogic.GameModel@{Bomberman.BusinessLogic.GameModel}}
+\subsubsection{\texorpdfstring{Map}{Map}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_bomberman_1_1_model_1_1_map_object}{Map\+Object}} \mbox{[},\mbox{]} Bomberman.\+Business\+Logic.\+Game\+Model.\+Map\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the map in the game 
+
+\mbox{\Hypertarget{class_bomberman_1_1_business_logic_1_1_game_model_a558c278098b639d6b16e3495ed9a2202}\label{class_bomberman_1_1_business_logic_1_1_game_model_a558c278098b639d6b16e3495ed9a2202}} 
+\index{Bomberman.BusinessLogic.GameModel@{Bomberman.BusinessLogic.GameModel}!Players@{Players}}
+\index{Players@{Players}!Bomberman.BusinessLogic.GameModel@{Bomberman.BusinessLogic.GameModel}}
+\subsubsection{\texorpdfstring{Players}{Players}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_bomberman_1_1_model_1_1_player}{Player}} \mbox{[}$\,$\mbox{]} Bomberman.\+Business\+Logic.\+Game\+Model.\+Players = new \mbox{\hyperlink{class_bomberman_1_1_model_1_1_player}{Player}}\mbox{[}2\mbox{]}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the players in the game 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Kovács\+Levente/\+Documents/oenik\+\_\+prog4\+\_\+2019\+\_\+1\+\_\+p71jvi\+\_\+u41kaf/\+Bomberman/\+Bomberman.\+Business\+Logic/\+Logic\+Classes/Game\+Model.\+cs\end{DoxyCompactItemize}

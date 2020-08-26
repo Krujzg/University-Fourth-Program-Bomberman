@@ -1,0 +1,45 @@
+﻿<Window x:Class="Bomberman.UI.HighScoreWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bomberman.UI"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="HighScoreWindow" Height="735.036" Width="787.249"
+        ResizeMode="NoResize"
+        KeyDown="Close">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/images/wallpaper_loadgame_1.png"/>
+        </Grid.Background>
+        <StackPanel>
+            <Label Content="HIGHSCORES" Foreground="Goldenrod" Margin=" 60 40 60 0"
+                   FontSize="40" 
+                   HorizontalContentAlignment="Center"
+                   FontWeight="Bold"/>
+            <ListBox  ItemsSource="{Binding}" Background="Transparent" Margin="98,0,99.8,32" Height="544"
+                      BorderThickness="0"
+                      HorizontalContentAlignment="Center">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <StackPanel Orientation="Vertical">
+                                <Label Content="{Binding Winner}" Foreground="LightGreen" FontSize="20" Padding="10"
+                                   ContentStringFormat="Winner: {0}"/>
+                                <Label Content="{Binding Winner_Score}" Foreground="LightGreen" FontSize="20" Padding="10"
+                                       ContentStringFormat="Score: {0} pts"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Vertical">
+                                <Label Content="{Binding Loser}" Foreground="Red" FontSize="20" Padding="10" 
+                                   ContentStringFormat="Loser: {0}"/>
+                                <Label Content="{Binding Loser_Score}" Foreground="Red" FontSize="20" Padding="10"
+                                       ContentStringFormat="Score: {0} pts"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </StackPanel>
+    </Grid>
+</Window>

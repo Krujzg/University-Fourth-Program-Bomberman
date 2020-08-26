@@ -1,0 +1,108 @@
+\hypertarget{class_bomberman_1_1_u_i_1_1_view_models_1_1_level_select_view_model}{}\section{Bomberman.\+U\+I.\+View\+Models.\+Level\+Select\+View\+Model Class Reference}
+\label{class_bomberman_1_1_u_i_1_1_view_models_1_1_level_select_view_model}\index{Bomberman.UI.ViewModels.LevelSelectViewModel@{Bomberman.UI.ViewModels.LevelSelectViewModel}}
+
+
+This class helps to load a default map, or a savedgame state  
+
+
+Inheritance diagram for Bomberman.\+U\+I.\+View\+Models.\+Level\+Select\+View\+Model\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_bomberman_1_1_u_i_1_1_view_models_1_1_level_select_view_model}
+\end{center}
+\end{figure}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+I\+Ordered\+Enumerable$<$ File\+Info $>$ \mbox{\hyperlink{class_bomberman_1_1_u_i_1_1_view_models_1_1_level_select_view_model_a08d69535daeb16cb4360dcd8adb11ed4}{New\+Game\+Files}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the default files ordered by name \end{DoxyCompactList}\item 
+I\+Ordered\+Enumerable$<$ File\+Info $>$ \mbox{\hyperlink{class_bomberman_1_1_u_i_1_1_view_models_1_1_level_select_view_model_acbbf1a8ae6d24c858f979e86145655ef}{Load\+Game\+Files}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the saved files ordered by name \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_bomberman_1_1_u_i_1_1_view_models_1_1_level_select_view_model_aaf7c009d1c89755568c28bd577a00774}{P1}} = \char`\"{}Player 1\char`\"{}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the player one s name \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_bomberman_1_1_u_i_1_1_view_models_1_1_level_select_view_model_a49af0fc46e0b68c371385ff0f998ed45}{P2}} = \char`\"{}Player 2\char`\"{}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the player two s name \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+readonly File\+Info \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_bomberman_1_1_u_i_1_1_view_models_1_1_level_select_view_model_a3880117d88570199927af42d461828fb}{load\+Game\+Files}} = new Directory\+Info(Directory.\+Get\+Parent(Directory.\+Get\+Parent(Environment.\+Current\+Directory).To\+String()) + \char`\"{}\textbackslash{}\textbackslash{}Saved\+Games\char`\"{}).Get\+Files(\char`\"{}$\ast$.sav\char`\"{})
+\begin{DoxyCompactList}\small\item\em Gets all the saved games \end{DoxyCompactList}\item 
+readonly File\+Info \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_bomberman_1_1_u_i_1_1_view_models_1_1_level_select_view_model_a35f10c80061120480536163aeb128580}{new\+Game\+Files}} = new Directory\+Info(Directory.\+Get\+Parent(Directory.\+Get\+Parent(Environment.\+Current\+Directory).To\+String()) + \char`\"{}\textbackslash{}\textbackslash{}Maps\char`\"{}).Get\+Files(\char`\"{}$\ast$.txt\char`\"{})
+\begin{DoxyCompactList}\small\item\em Gets all the default maps \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This class helps to load a default map, or a savedgame state 
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_bomberman_1_1_u_i_1_1_view_models_1_1_level_select_view_model_a3880117d88570199927af42d461828fb}\label{class_bomberman_1_1_u_i_1_1_view_models_1_1_level_select_view_model_a3880117d88570199927af42d461828fb}} 
+\index{Bomberman.UI.ViewModels.LevelSelectViewModel@{Bomberman.UI.ViewModels.LevelSelectViewModel}!loadGameFiles@{loadGameFiles}}
+\index{loadGameFiles@{loadGameFiles}!Bomberman.UI.ViewModels.LevelSelectViewModel@{Bomberman.UI.ViewModels.LevelSelectViewModel}}
+\subsubsection{\texorpdfstring{loadGameFiles}{loadGameFiles}}
+{\footnotesize\ttfamily readonly File\+Info \mbox{[}$\,$\mbox{]} Bomberman.\+U\+I.\+View\+Models.\+Level\+Select\+View\+Model.\+load\+Game\+Files = new Directory\+Info(Directory.\+Get\+Parent(Directory.\+Get\+Parent(Environment.\+Current\+Directory).To\+String()) + \char`\"{}\textbackslash{}\textbackslash{}Saved\+Games\char`\"{}).Get\+Files(\char`\"{}$\ast$.sav\char`\"{})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Gets all the saved games 
+
+\mbox{\Hypertarget{class_bomberman_1_1_u_i_1_1_view_models_1_1_level_select_view_model_a35f10c80061120480536163aeb128580}\label{class_bomberman_1_1_u_i_1_1_view_models_1_1_level_select_view_model_a35f10c80061120480536163aeb128580}} 
+\index{Bomberman.UI.ViewModels.LevelSelectViewModel@{Bomberman.UI.ViewModels.LevelSelectViewModel}!newGameFiles@{newGameFiles}}
+\index{newGameFiles@{newGameFiles}!Bomberman.UI.ViewModels.LevelSelectViewModel@{Bomberman.UI.ViewModels.LevelSelectViewModel}}
+\subsubsection{\texorpdfstring{newGameFiles}{newGameFiles}}
+{\footnotesize\ttfamily readonly File\+Info \mbox{[}$\,$\mbox{]} Bomberman.\+U\+I.\+View\+Models.\+Level\+Select\+View\+Model.\+new\+Game\+Files = new Directory\+Info(Directory.\+Get\+Parent(Directory.\+Get\+Parent(Environment.\+Current\+Directory).To\+String()) + \char`\"{}\textbackslash{}\textbackslash{}Maps\char`\"{}).Get\+Files(\char`\"{}$\ast$.txt\char`\"{})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Gets all the default maps 
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_bomberman_1_1_u_i_1_1_view_models_1_1_level_select_view_model_acbbf1a8ae6d24c858f979e86145655ef}\label{class_bomberman_1_1_u_i_1_1_view_models_1_1_level_select_view_model_acbbf1a8ae6d24c858f979e86145655ef}} 
+\index{Bomberman.UI.ViewModels.LevelSelectViewModel@{Bomberman.UI.ViewModels.LevelSelectViewModel}!LoadGameFiles@{LoadGameFiles}}
+\index{LoadGameFiles@{LoadGameFiles}!Bomberman.UI.ViewModels.LevelSelectViewModel@{Bomberman.UI.ViewModels.LevelSelectViewModel}}
+\subsubsection{\texorpdfstring{LoadGameFiles}{LoadGameFiles}}
+{\footnotesize\ttfamily I\+Ordered\+Enumerable$<$File\+Info$>$ Bomberman.\+U\+I.\+View\+Models.\+Level\+Select\+View\+Model.\+Load\+Game\+Files\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the saved files ordered by name 
+
+\mbox{\Hypertarget{class_bomberman_1_1_u_i_1_1_view_models_1_1_level_select_view_model_a08d69535daeb16cb4360dcd8adb11ed4}\label{class_bomberman_1_1_u_i_1_1_view_models_1_1_level_select_view_model_a08d69535daeb16cb4360dcd8adb11ed4}} 
+\index{Bomberman.UI.ViewModels.LevelSelectViewModel@{Bomberman.UI.ViewModels.LevelSelectViewModel}!NewGameFiles@{NewGameFiles}}
+\index{NewGameFiles@{NewGameFiles}!Bomberman.UI.ViewModels.LevelSelectViewModel@{Bomberman.UI.ViewModels.LevelSelectViewModel}}
+\subsubsection{\texorpdfstring{NewGameFiles}{NewGameFiles}}
+{\footnotesize\ttfamily I\+Ordered\+Enumerable$<$File\+Info$>$ Bomberman.\+U\+I.\+View\+Models.\+Level\+Select\+View\+Model.\+New\+Game\+Files\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the default files ordered by name 
+
+\mbox{\Hypertarget{class_bomberman_1_1_u_i_1_1_view_models_1_1_level_select_view_model_aaf7c009d1c89755568c28bd577a00774}\label{class_bomberman_1_1_u_i_1_1_view_models_1_1_level_select_view_model_aaf7c009d1c89755568c28bd577a00774}} 
+\index{Bomberman.UI.ViewModels.LevelSelectViewModel@{Bomberman.UI.ViewModels.LevelSelectViewModel}!P1@{P1}}
+\index{P1@{P1}!Bomberman.UI.ViewModels.LevelSelectViewModel@{Bomberman.UI.ViewModels.LevelSelectViewModel}}
+\subsubsection{\texorpdfstring{P1}{P1}}
+{\footnotesize\ttfamily string Bomberman.\+U\+I.\+View\+Models.\+Level\+Select\+View\+Model.\+P1 = \char`\"{}Player 1\char`\"{}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the player one s name 
+
+\mbox{\Hypertarget{class_bomberman_1_1_u_i_1_1_view_models_1_1_level_select_view_model_a49af0fc46e0b68c371385ff0f998ed45}\label{class_bomberman_1_1_u_i_1_1_view_models_1_1_level_select_view_model_a49af0fc46e0b68c371385ff0f998ed45}} 
+\index{Bomberman.UI.ViewModels.LevelSelectViewModel@{Bomberman.UI.ViewModels.LevelSelectViewModel}!P2@{P2}}
+\index{P2@{P2}!Bomberman.UI.ViewModels.LevelSelectViewModel@{Bomberman.UI.ViewModels.LevelSelectViewModel}}
+\subsubsection{\texorpdfstring{P2}{P2}}
+{\footnotesize\ttfamily string Bomberman.\+U\+I.\+View\+Models.\+Level\+Select\+View\+Model.\+P2 = \char`\"{}Player 2\char`\"{}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the player two s name 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Kovács\+Levente/\+Documents/oenik\+\_\+prog4\+\_\+2019\+\_\+1\+\_\+p71jvi\+\_\+u41kaf/\+Bomberman/\+Bomberman.\+U\+I/\+View\+Models/Level\+Select\+View\+Model.\+cs\end{DoxyCompactItemize}

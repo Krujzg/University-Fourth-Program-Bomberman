@@ -1,0 +1,56 @@
+﻿<Window x:Class="Bomberman.UI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bomberman.UI"
+        mc:Ignorable="d"
+        Title="BOMBERMAN - THE GAME" Height="450" Width="400"
+        ResizeMode="NoResize"
+        WindowState="Normal"
+        WindowStyle="SingleBorderWindow"
+        KeyDown="Window_KeyDown"
+        Background="Black"
+        WindowStartupLocation="CenterScreen"
+        >
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/images/wallpaper_2.jpg"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Image Source="/images/bomberman.png" Grid.Row="0"></Image>
+        <Button  Content="Start Game" Grid.Row="1"   Foreground="Goldenrod"
+                Margin="100 20 100 20" Click="StartGame" FontSize="20" FontWeight="Bold">
+            <Button.Background>
+                <ImageBrush ImageSource="/images/button_background.png"/>
+            </Button.Background>
+            
+        </Button>
+        <Button Content="Instructions" Grid.Row="2" Foreground="Goldenrod"
+                Margin="100 20 100 20" Click="Instruction" FontSize="20" FontWeight="Bold" >
+            <Button.Background>
+                <ImageBrush ImageSource="/images/button_background.png"/>
+            </Button.Background>
+            
+        </Button>
+        <Button Content="HighScore" Grid.Row="3"  Foreground="Goldenrod"
+                Margin="100 20 100 20" Click="HighScore" FontSize="20" FontWeight="Bold">
+            <Button.Background>
+                <ImageBrush ImageSource="/images/button_background.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="Exit" Grid.Row="4" Foreground="Goldenrod" 
+                FontSize="20" FontWeight="Bold"
+                Margin="100 20 100 20" Click="Exit">
+            <Button.Background>
+                <ImageBrush ImageSource="/images/button_background.png"/>
+            </Button.Background>
+        </Button>
+    </Grid>
+</Window>

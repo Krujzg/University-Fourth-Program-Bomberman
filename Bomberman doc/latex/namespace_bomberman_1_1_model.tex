@@ -1,0 +1,80 @@
+\hypertarget{namespace_bomberman_1_1_model}{}\section{Bomberman.\+Model Namespace Reference}
+\label{namespace_bomberman_1_1_model}\index{Bomberman.Model@{Bomberman.Model}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_bomberman_1_1_model_1_1_bomb}{Bomb}}
+\begin{DoxyCompactList}\small\item\em Representation of a bomb on the map. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_bomberman_1_1_model_1_1_broken_barel}{Broken\+Barel}}
+\begin{DoxyCompactList}\small\item\em Representation of a broken barrel on the map. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_bomberman_1_1_model_1_1_explode}{Explode}}
+\begin{DoxyCompactList}\small\item\em Representation of an explosion on the map. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_bomberman_1_1_model_1_1_floor}{Floor}}
+\begin{DoxyCompactList}\small\item\em Representation of an explosion on the map. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_bomberman_1_1_model_1_1_map_object}{Map\+Object}}
+\begin{DoxyCompactList}\small\item\em Represents an object in the game map matrix. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_bomberman_1_1_model_1_1_player}{Player}}
+\begin{DoxyCompactList}\small\item\em Representation of a player on the map. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_bomberman_1_1_model_1_1_plus_bomb_power_up}{Plus\+Bomb\+Power\+Up}}
+\begin{DoxyCompactList}\small\item\em Representation of a powerup on the map. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_bomberman_1_1_model_1_1_wall}{Wall}}
+\begin{DoxyCompactList}\small\item\em Representation of a wall or barrel on the map (depends on the Destroyable property). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespace_bomberman_1_1_model_ae2cd98abbbc849107bf2802cb1e7a8a3}{Point\+Types}} \{ \mbox{\hyperlink{namespace_bomberman_1_1_model_ae2cd98abbbc849107bf2802cb1e7a8a3a95056537bca5e0700240da330c33f1a2}{Point\+Types.\+Destroy\+Wall}}, 
+\mbox{\hyperlink{namespace_bomberman_1_1_model_ae2cd98abbbc849107bf2802cb1e7a8a3abb45b82490a572ef088adf870327a923}{Point\+Types.\+Pick\+Up\+Power\+Ups}}, 
+\mbox{\hyperlink{namespace_bomberman_1_1_model_ae2cd98abbbc849107bf2802cb1e7a8a3a14e161ef2d3d0bb9532803e701578c39}{Point\+Types.\+Kill\+Other\+Player}}
+ \}
+\begin{DoxyCompactList}\small\item\em Represents all the different scenarios when a player can earn points. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{namespace_bomberman_1_1_model_a698c97744bc885fe16cc6f385fc501ef}{Power\+Up}} \{ \mbox{\hyperlink{namespace_bomberman_1_1_model_a698c97744bc885fe16cc6f385fc501efa175c9c587bfe0d4887e1401c8df4f181}{Power\+Up.\+Plus\+Bomb}}, 
+\mbox{\hyperlink{namespace_bomberman_1_1_model_a698c97744bc885fe16cc6f385fc501efa0db7259f75c4c771f1c1ac569d6cac95}{Power\+Up.\+Plus\+Range}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enumerates the types of powerups. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{namespace_bomberman_1_1_model_ae2cd98abbbc849107bf2802cb1e7a8a3}\label{namespace_bomberman_1_1_model_ae2cd98abbbc849107bf2802cb1e7a8a3}} 
+\index{Bomberman.Model@{Bomberman.Model}!PointTypes@{PointTypes}}
+\index{PointTypes@{PointTypes}!Bomberman.Model@{Bomberman.Model}}
+\subsubsection{\texorpdfstring{PointTypes}{PointTypes}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_bomberman_1_1_model_ae2cd98abbbc849107bf2802cb1e7a8a3}{Bomberman.\+Model.\+Point\+Types}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Represents all the different scenarios when a player can earn points. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DestroyWall@{DestroyWall}!Bomberman.Model@{Bomberman.Model}}\index{Bomberman.Model@{Bomberman.Model}!DestroyWall@{DestroyWall}}}\mbox{\Hypertarget{namespace_bomberman_1_1_model_ae2cd98abbbc849107bf2802cb1e7a8a3a95056537bca5e0700240da330c33f1a2}\label{namespace_bomberman_1_1_model_ae2cd98abbbc849107bf2802cb1e7a8a3a95056537bca5e0700240da330c33f1a2}} 
+Destroy\+Wall&\mbox{\hyperlink{class_bomberman_1_1_model_1_1_player}{Player}} gets points when it destroys a wall. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PickUpPowerUps@{PickUpPowerUps}!Bomberman.Model@{Bomberman.Model}}\index{Bomberman.Model@{Bomberman.Model}!PickUpPowerUps@{PickUpPowerUps}}}\mbox{\Hypertarget{namespace_bomberman_1_1_model_ae2cd98abbbc849107bf2802cb1e7a8a3abb45b82490a572ef088adf870327a923}\label{namespace_bomberman_1_1_model_ae2cd98abbbc849107bf2802cb1e7a8a3abb45b82490a572ef088adf870327a923}} 
+Pick\+Up\+Power\+Ups&\mbox{\hyperlink{class_bomberman_1_1_model_1_1_player}{Player}} gets points when it Picks up a powerup. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KillOtherPlayer@{KillOtherPlayer}!Bomberman.Model@{Bomberman.Model}}\index{Bomberman.Model@{Bomberman.Model}!KillOtherPlayer@{KillOtherPlayer}}}\mbox{\Hypertarget{namespace_bomberman_1_1_model_ae2cd98abbbc849107bf2802cb1e7a8a3a14e161ef2d3d0bb9532803e701578c39}\label{namespace_bomberman_1_1_model_ae2cd98abbbc849107bf2802cb1e7a8a3a14e161ef2d3d0bb9532803e701578c39}} 
+Kill\+Other\+Player&\mbox{\hyperlink{class_bomberman_1_1_model_1_1_player}{Player}} gets points when it kills another player. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespace_bomberman_1_1_model_a698c97744bc885fe16cc6f385fc501ef}\label{namespace_bomberman_1_1_model_a698c97744bc885fe16cc6f385fc501ef}} 
+\index{Bomberman.Model@{Bomberman.Model}!PowerUp@{PowerUp}}
+\index{PowerUp@{PowerUp}!Bomberman.Model@{Bomberman.Model}}
+\subsubsection{\texorpdfstring{PowerUp}{PowerUp}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_bomberman_1_1_model_a698c97744bc885fe16cc6f385fc501ef}{Bomberman.\+Model.\+Power\+Up}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Enumerates the types of powerups. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PlusBomb@{PlusBomb}!Bomberman.Model@{Bomberman.Model}}\index{Bomberman.Model@{Bomberman.Model}!PlusBomb@{PlusBomb}}}\mbox{\Hypertarget{namespace_bomberman_1_1_model_a698c97744bc885fe16cc6f385fc501efa175c9c587bfe0d4887e1401c8df4f181}\label{namespace_bomberman_1_1_model_a698c97744bc885fe16cc6f385fc501efa175c9c587bfe0d4887e1401c8df4f181}} 
+Plus\+Bomb&Adds a bomb to the player\textquotesingle{}s bomb list. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PlusRange@{PlusRange}!Bomberman.Model@{Bomberman.Model}}\index{Bomberman.Model@{Bomberman.Model}!PlusRange@{PlusRange}}}\mbox{\Hypertarget{namespace_bomberman_1_1_model_a698c97744bc885fe16cc6f385fc501efa0db7259f75c4c771f1c1ac569d6cac95}\label{namespace_bomberman_1_1_model_a698c97744bc885fe16cc6f385fc501efa0db7259f75c4c771f1c1ac569d6cac95}} 
+Plus\+Range&Increases player\textquotesingle{}s bombs\textquotesingle{} range. \\
+\hline
+
+\end{DoxyEnumFields}

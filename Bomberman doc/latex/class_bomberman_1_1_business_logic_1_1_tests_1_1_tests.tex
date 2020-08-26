@@ -1,0 +1,229 @@
+\hypertarget{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests}{}\section{Bomberman.\+Business\+Logic.\+Tests.\+Tests Class Reference}
+\label{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests}\index{Bomberman.BusinessLogic.Tests.Tests@{Bomberman.BusinessLogic.Tests.Tests}}
+
+
+Business logic test fixture.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests_abd8cb0b5bcdb7bc95afd06e338a68fba}{Setup}} ()
+\begin{DoxyCompactList}\small\item\em Sets up test fields. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_bomberman_1_1_model_1_1_map_object}{Map\+Object}} \mbox{[},\mbox{]} \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests_a539a4ac94b7e7f236b370b9376c88665}{Setup\+Map}} (int size)
+\begin{DoxyCompactList}\small\item\em Creates a simple map for easier testing \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests_a0962f6636e800610fd22448371f7e7d4}{Test\+Player\+Step\+On\+Floor}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests}{Tests}} if player can step on floor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests_ab7de5e1efa237dffdcd03cbb9235aac6}{If\+Player\+Tries\+To\+Step\+On\+Wall\+\_\+\+It\+Cant}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests}{Tests}} if player can step on wall. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests_a1511442fcca20dc811901b9f44f94b7d}{If\+Player\+Tries\+To\+Step\+On\+Destructible\+Wall\+\_\+\+It\+Cant}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests}{Tests}} if player can step on barrel. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests_af8ea94ab53f71c7a17650a886aeadc42}{If\+Player\+Tries\+To\+Step\+On\+Player\+\_\+\+It\+Can}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests}{Tests}} if player can step on other players. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests_a5f31456cb6dc981fa460b4a172974caf}{If\+Player\+Tries\+To\+Step\+On\+Bomb\+\_\+\+It\+Cant}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests}{Tests}} if player can step on bomb. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests_aeaa7818b23ce1208980c488c8af6e90a}{If\+Regenerate\+Bomb\+Is\+Invoked\+\_\+\+Player\+Gets\+An\+Additional\+Bomb}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests}{Tests}} Regenerate\+Bomb method. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests_a4a3dc6bb902a84fccc6eaaffebebeae1}{I\+S\+Power\+Up\+Picked\+Up\+\_\+\+Bombs\+Countplus1}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests}{Tests}} Pick\+Up\+Power\+Up method. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests_a59522090b27a18e3c30ff129bb651b56}{If\+Player\+Steps\+On\+Powerup\+\_\+\+Pickup\+Powerup\+Is\+Invoked}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests}{Tests}} whether Pick\+Up\+Power\+Up is invoked, when player steps on powerup. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests_a743e17bb9043aca8465c90dbd98fdddd}{If\+Player\+Steps\+On\+Explosion\+\_\+\+Player\+Got\+Hit\+Is\+True}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests}{Tests}} whether player gets hit, if it walks into an explosion. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests_a092cbc583e8edacb6efab18c7b9695da}{If\+Player\+Gets\+Points\+\_\+\+Player\+Gets\+Point\+For\+Destroying\+Barrel}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests}{Tests}} whether player gets given amount of score for destroying a barrel. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests_ac733be2eb41411d749c2ab8ede811e3a}{If\+Player\+Gets\+Points\+\_\+\+Player\+Gets\+Point\+For\+Picking\+Up\+Power\+Up}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests}{Tests}} whether player gets points from walking over a powerup. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests_a7eee23b3b032beaa0213d7f7ed76eee4}{If\+Player\+Stays\+On\+Bomb\+\_\+\+It\+Gets\+Hit}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests}{Tests}} if player gets hit, when blown up by bomb. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests_a2f5d51f70042cad096c98bce366e48b9}{If\+Player\+Gets\+Hit\+\_\+\+Repository\+Inserts\+New\+Item}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests}{Tests}} if high score is updated once the game finished. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests_a6b2c2e112c8ab898a88214d5a0549433}\label{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests_a6b2c2e112c8ab898a88214d5a0549433}} 
+\mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_game_logic}{Game\+Logic}} {\bfseries gL}
+\item 
+\mbox{\Hypertarget{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests_adb1842f4208718ef7d5ac8d5026c0a15}\label{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests_adb1842f4208718ef7d5ac8d5026c0a15}} 
+\mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_data_base_logic}{Data\+Base\+Logic}} {\bfseries d\+Bl}
+\item 
+\mbox{\Hypertarget{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests_a08caa3ff176fa4f99b367c5142cb5d26}\label{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests_a08caa3ff176fa4f99b367c5142cb5d26}} 
+List$<$ \mbox{\hyperlink{class_bomberman_1_1_data_1_1_rounds}{Rounds}} $>$ {\bfseries database}
+\item 
+\mbox{\Hypertarget{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests_a63eafe7459f3945784aba7f8941ba450}\label{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests_a63eafe7459f3945784aba7f8941ba450}} 
+Mock$<$ \mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_game_model}{Game\+Model}} $>$ {\bfseries g\+M\+Mock}
+\item 
+\mbox{\Hypertarget{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests_af33d977a289f5dcc07de8efe6dbbfa1e}\label{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests_af33d977a289f5dcc07de8efe6dbbfa1e}} 
+Mock$<$ \mbox{\hyperlink{class_bomberman_1_1_repository_1_1_repository}{Repository}} $>$ {\bfseries mocked\+Repository}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Business logic test fixture. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests_a2f5d51f70042cad096c98bce366e48b9}\label{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests_a2f5d51f70042cad096c98bce366e48b9}} 
+\index{Bomberman.BusinessLogic.Tests.Tests@{Bomberman.BusinessLogic.Tests.Tests}!IfPlayerGetsHit\_RepositoryInsertsNewItem@{IfPlayerGetsHit\_RepositoryInsertsNewItem}}
+\index{IfPlayerGetsHit\_RepositoryInsertsNewItem@{IfPlayerGetsHit\_RepositoryInsertsNewItem}!Bomberman.BusinessLogic.Tests.Tests@{Bomberman.BusinessLogic.Tests.Tests}}
+\subsubsection{\texorpdfstring{IfPlayerGetsHit\_RepositoryInsertsNewItem()}{IfPlayerGetsHit\_RepositoryInsertsNewItem()}}
+{\footnotesize\ttfamily void Bomberman.\+Business\+Logic.\+Tests.\+Tests.\+If\+Player\+Gets\+Hit\+\_\+\+Repository\+Inserts\+New\+Item (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests}{Tests}} if high score is updated once the game finished. 
+
+\mbox{\Hypertarget{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests_a092cbc583e8edacb6efab18c7b9695da}\label{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests_a092cbc583e8edacb6efab18c7b9695da}} 
+\index{Bomberman.BusinessLogic.Tests.Tests@{Bomberman.BusinessLogic.Tests.Tests}!IfPlayerGetsPoints\_PlayerGetsPointForDestroyingBarrel@{IfPlayerGetsPoints\_PlayerGetsPointForDestroyingBarrel}}
+\index{IfPlayerGetsPoints\_PlayerGetsPointForDestroyingBarrel@{IfPlayerGetsPoints\_PlayerGetsPointForDestroyingBarrel}!Bomberman.BusinessLogic.Tests.Tests@{Bomberman.BusinessLogic.Tests.Tests}}
+\subsubsection{\texorpdfstring{IfPlayerGetsPoints\_PlayerGetsPointForDestroyingBarrel()}{IfPlayerGetsPoints\_PlayerGetsPointForDestroyingBarrel()}}
+{\footnotesize\ttfamily void Bomberman.\+Business\+Logic.\+Tests.\+Tests.\+If\+Player\+Gets\+Points\+\_\+\+Player\+Gets\+Point\+For\+Destroying\+Barrel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests}{Tests}} whether player gets given amount of score for destroying a barrel. 
+
+\mbox{\Hypertarget{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests_ac733be2eb41411d749c2ab8ede811e3a}\label{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests_ac733be2eb41411d749c2ab8ede811e3a}} 
+\index{Bomberman.BusinessLogic.Tests.Tests@{Bomberman.BusinessLogic.Tests.Tests}!IfPlayerGetsPoints\_PlayerGetsPointForPickingUpPowerUp@{IfPlayerGetsPoints\_PlayerGetsPointForPickingUpPowerUp}}
+\index{IfPlayerGetsPoints\_PlayerGetsPointForPickingUpPowerUp@{IfPlayerGetsPoints\_PlayerGetsPointForPickingUpPowerUp}!Bomberman.BusinessLogic.Tests.Tests@{Bomberman.BusinessLogic.Tests.Tests}}
+\subsubsection{\texorpdfstring{IfPlayerGetsPoints\_PlayerGetsPointForPickingUpPowerUp()}{IfPlayerGetsPoints\_PlayerGetsPointForPickingUpPowerUp()}}
+{\footnotesize\ttfamily void Bomberman.\+Business\+Logic.\+Tests.\+Tests.\+If\+Player\+Gets\+Points\+\_\+\+Player\+Gets\+Point\+For\+Picking\+Up\+Power\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests}{Tests}} whether player gets points from walking over a powerup. 
+
+\mbox{\Hypertarget{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests_a7eee23b3b032beaa0213d7f7ed76eee4}\label{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests_a7eee23b3b032beaa0213d7f7ed76eee4}} 
+\index{Bomberman.BusinessLogic.Tests.Tests@{Bomberman.BusinessLogic.Tests.Tests}!IfPlayerStaysOnBomb\_ItGetsHit@{IfPlayerStaysOnBomb\_ItGetsHit}}
+\index{IfPlayerStaysOnBomb\_ItGetsHit@{IfPlayerStaysOnBomb\_ItGetsHit}!Bomberman.BusinessLogic.Tests.Tests@{Bomberman.BusinessLogic.Tests.Tests}}
+\subsubsection{\texorpdfstring{IfPlayerStaysOnBomb\_ItGetsHit()}{IfPlayerStaysOnBomb\_ItGetsHit()}}
+{\footnotesize\ttfamily void Bomberman.\+Business\+Logic.\+Tests.\+Tests.\+If\+Player\+Stays\+On\+Bomb\+\_\+\+It\+Gets\+Hit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests}{Tests}} if player gets hit, when blown up by bomb. 
+
+\mbox{\Hypertarget{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests_a743e17bb9043aca8465c90dbd98fdddd}\label{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests_a743e17bb9043aca8465c90dbd98fdddd}} 
+\index{Bomberman.BusinessLogic.Tests.Tests@{Bomberman.BusinessLogic.Tests.Tests}!IfPlayerStepsOnExplosion\_PlayerGotHitIsTrue@{IfPlayerStepsOnExplosion\_PlayerGotHitIsTrue}}
+\index{IfPlayerStepsOnExplosion\_PlayerGotHitIsTrue@{IfPlayerStepsOnExplosion\_PlayerGotHitIsTrue}!Bomberman.BusinessLogic.Tests.Tests@{Bomberman.BusinessLogic.Tests.Tests}}
+\subsubsection{\texorpdfstring{IfPlayerStepsOnExplosion\_PlayerGotHitIsTrue()}{IfPlayerStepsOnExplosion\_PlayerGotHitIsTrue()}}
+{\footnotesize\ttfamily void Bomberman.\+Business\+Logic.\+Tests.\+Tests.\+If\+Player\+Steps\+On\+Explosion\+\_\+\+Player\+Got\+Hit\+Is\+True (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests}{Tests}} whether player gets hit, if it walks into an explosion. 
+
+\mbox{\Hypertarget{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests_a59522090b27a18e3c30ff129bb651b56}\label{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests_a59522090b27a18e3c30ff129bb651b56}} 
+\index{Bomberman.BusinessLogic.Tests.Tests@{Bomberman.BusinessLogic.Tests.Tests}!IfPlayerStepsOnPowerup\_PickupPowerupIsInvoked@{IfPlayerStepsOnPowerup\_PickupPowerupIsInvoked}}
+\index{IfPlayerStepsOnPowerup\_PickupPowerupIsInvoked@{IfPlayerStepsOnPowerup\_PickupPowerupIsInvoked}!Bomberman.BusinessLogic.Tests.Tests@{Bomberman.BusinessLogic.Tests.Tests}}
+\subsubsection{\texorpdfstring{IfPlayerStepsOnPowerup\_PickupPowerupIsInvoked()}{IfPlayerStepsOnPowerup\_PickupPowerupIsInvoked()}}
+{\footnotesize\ttfamily void Bomberman.\+Business\+Logic.\+Tests.\+Tests.\+If\+Player\+Steps\+On\+Powerup\+\_\+\+Pickup\+Powerup\+Is\+Invoked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests}{Tests}} whether Pick\+Up\+Power\+Up is invoked, when player steps on powerup. 
+
+\mbox{\Hypertarget{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests_a5f31456cb6dc981fa460b4a172974caf}\label{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests_a5f31456cb6dc981fa460b4a172974caf}} 
+\index{Bomberman.BusinessLogic.Tests.Tests@{Bomberman.BusinessLogic.Tests.Tests}!IfPlayerTriesToStepOnBomb\_ItCant@{IfPlayerTriesToStepOnBomb\_ItCant}}
+\index{IfPlayerTriesToStepOnBomb\_ItCant@{IfPlayerTriesToStepOnBomb\_ItCant}!Bomberman.BusinessLogic.Tests.Tests@{Bomberman.BusinessLogic.Tests.Tests}}
+\subsubsection{\texorpdfstring{IfPlayerTriesToStepOnBomb\_ItCant()}{IfPlayerTriesToStepOnBomb\_ItCant()}}
+{\footnotesize\ttfamily void Bomberman.\+Business\+Logic.\+Tests.\+Tests.\+If\+Player\+Tries\+To\+Step\+On\+Bomb\+\_\+\+It\+Cant (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests}{Tests}} if player can step on bomb. 
+
+\mbox{\Hypertarget{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests_a1511442fcca20dc811901b9f44f94b7d}\label{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests_a1511442fcca20dc811901b9f44f94b7d}} 
+\index{Bomberman.BusinessLogic.Tests.Tests@{Bomberman.BusinessLogic.Tests.Tests}!IfPlayerTriesToStepOnDestructibleWall\_ItCant@{IfPlayerTriesToStepOnDestructibleWall\_ItCant}}
+\index{IfPlayerTriesToStepOnDestructibleWall\_ItCant@{IfPlayerTriesToStepOnDestructibleWall\_ItCant}!Bomberman.BusinessLogic.Tests.Tests@{Bomberman.BusinessLogic.Tests.Tests}}
+\subsubsection{\texorpdfstring{IfPlayerTriesToStepOnDestructibleWall\_ItCant()}{IfPlayerTriesToStepOnDestructibleWall\_ItCant()}}
+{\footnotesize\ttfamily void Bomberman.\+Business\+Logic.\+Tests.\+Tests.\+If\+Player\+Tries\+To\+Step\+On\+Destructible\+Wall\+\_\+\+It\+Cant (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests}{Tests}} if player can step on barrel. 
+
+\mbox{\Hypertarget{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests_af8ea94ab53f71c7a17650a886aeadc42}\label{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests_af8ea94ab53f71c7a17650a886aeadc42}} 
+\index{Bomberman.BusinessLogic.Tests.Tests@{Bomberman.BusinessLogic.Tests.Tests}!IfPlayerTriesToStepOnPlayer\_ItCan@{IfPlayerTriesToStepOnPlayer\_ItCan}}
+\index{IfPlayerTriesToStepOnPlayer\_ItCan@{IfPlayerTriesToStepOnPlayer\_ItCan}!Bomberman.BusinessLogic.Tests.Tests@{Bomberman.BusinessLogic.Tests.Tests}}
+\subsubsection{\texorpdfstring{IfPlayerTriesToStepOnPlayer\_ItCan()}{IfPlayerTriesToStepOnPlayer\_ItCan()}}
+{\footnotesize\ttfamily void Bomberman.\+Business\+Logic.\+Tests.\+Tests.\+If\+Player\+Tries\+To\+Step\+On\+Player\+\_\+\+It\+Can (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests}{Tests}} if player can step on other players. 
+
+\mbox{\Hypertarget{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests_ab7de5e1efa237dffdcd03cbb9235aac6}\label{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests_ab7de5e1efa237dffdcd03cbb9235aac6}} 
+\index{Bomberman.BusinessLogic.Tests.Tests@{Bomberman.BusinessLogic.Tests.Tests}!IfPlayerTriesToStepOnWall\_ItCant@{IfPlayerTriesToStepOnWall\_ItCant}}
+\index{IfPlayerTriesToStepOnWall\_ItCant@{IfPlayerTriesToStepOnWall\_ItCant}!Bomberman.BusinessLogic.Tests.Tests@{Bomberman.BusinessLogic.Tests.Tests}}
+\subsubsection{\texorpdfstring{IfPlayerTriesToStepOnWall\_ItCant()}{IfPlayerTriesToStepOnWall\_ItCant()}}
+{\footnotesize\ttfamily void Bomberman.\+Business\+Logic.\+Tests.\+Tests.\+If\+Player\+Tries\+To\+Step\+On\+Wall\+\_\+\+It\+Cant (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests}{Tests}} if player can step on wall. 
+
+\mbox{\Hypertarget{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests_aeaa7818b23ce1208980c488c8af6e90a}\label{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests_aeaa7818b23ce1208980c488c8af6e90a}} 
+\index{Bomberman.BusinessLogic.Tests.Tests@{Bomberman.BusinessLogic.Tests.Tests}!IfRegenerateBombIsInvoked\_PlayerGetsAnAdditionalBomb@{IfRegenerateBombIsInvoked\_PlayerGetsAnAdditionalBomb}}
+\index{IfRegenerateBombIsInvoked\_PlayerGetsAnAdditionalBomb@{IfRegenerateBombIsInvoked\_PlayerGetsAnAdditionalBomb}!Bomberman.BusinessLogic.Tests.Tests@{Bomberman.BusinessLogic.Tests.Tests}}
+\subsubsection{\texorpdfstring{IfRegenerateBombIsInvoked\_PlayerGetsAnAdditionalBomb()}{IfRegenerateBombIsInvoked\_PlayerGetsAnAdditionalBomb()}}
+{\footnotesize\ttfamily void Bomberman.\+Business\+Logic.\+Tests.\+Tests.\+If\+Regenerate\+Bomb\+Is\+Invoked\+\_\+\+Player\+Gets\+An\+Additional\+Bomb (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests}{Tests}} Regenerate\+Bomb method. 
+
+\mbox{\Hypertarget{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests_a4a3dc6bb902a84fccc6eaaffebebeae1}\label{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests_a4a3dc6bb902a84fccc6eaaffebebeae1}} 
+\index{Bomberman.BusinessLogic.Tests.Tests@{Bomberman.BusinessLogic.Tests.Tests}!ISPowerUpPickedUp\_BombsCountplus1@{ISPowerUpPickedUp\_BombsCountplus1}}
+\index{ISPowerUpPickedUp\_BombsCountplus1@{ISPowerUpPickedUp\_BombsCountplus1}!Bomberman.BusinessLogic.Tests.Tests@{Bomberman.BusinessLogic.Tests.Tests}}
+\subsubsection{\texorpdfstring{ISPowerUpPickedUp\_BombsCountplus1()}{ISPowerUpPickedUp\_BombsCountplus1()}}
+{\footnotesize\ttfamily void Bomberman.\+Business\+Logic.\+Tests.\+Tests.\+I\+S\+Power\+Up\+Picked\+Up\+\_\+\+Bombs\+Countplus1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests}{Tests}} Pick\+Up\+Power\+Up method. 
+
+\mbox{\Hypertarget{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests_abd8cb0b5bcdb7bc95afd06e338a68fba}\label{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests_abd8cb0b5bcdb7bc95afd06e338a68fba}} 
+\index{Bomberman.BusinessLogic.Tests.Tests@{Bomberman.BusinessLogic.Tests.Tests}!Setup@{Setup}}
+\index{Setup@{Setup}!Bomberman.BusinessLogic.Tests.Tests@{Bomberman.BusinessLogic.Tests.Tests}}
+\subsubsection{\texorpdfstring{Setup()}{Setup()}}
+{\footnotesize\ttfamily void Bomberman.\+Business\+Logic.\+Tests.\+Tests.\+Setup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets up test fields. 
+
+\mbox{\Hypertarget{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests_a539a4ac94b7e7f236b370b9376c88665}\label{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests_a539a4ac94b7e7f236b370b9376c88665}} 
+\index{Bomberman.BusinessLogic.Tests.Tests@{Bomberman.BusinessLogic.Tests.Tests}!SetupMap@{SetupMap}}
+\index{SetupMap@{SetupMap}!Bomberman.BusinessLogic.Tests.Tests@{Bomberman.BusinessLogic.Tests.Tests}}
+\subsubsection{\texorpdfstring{SetupMap()}{SetupMap()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_bomberman_1_1_model_1_1_map_object}{Map\+Object}} \mbox{[},\mbox{]} Bomberman.\+Business\+Logic.\+Tests.\+Tests.\+Setup\+Map (\begin{DoxyParamCaption}\item[{int}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Creates a simple map for easier testing 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & Map side length\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Mapobject matrix (game map)
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests_a0962f6636e800610fd22448371f7e7d4}\label{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests_a0962f6636e800610fd22448371f7e7d4}} 
+\index{Bomberman.BusinessLogic.Tests.Tests@{Bomberman.BusinessLogic.Tests.Tests}!TestPlayerStepOnFloor@{TestPlayerStepOnFloor}}
+\index{TestPlayerStepOnFloor@{TestPlayerStepOnFloor}!Bomberman.BusinessLogic.Tests.Tests@{Bomberman.BusinessLogic.Tests.Tests}}
+\subsubsection{\texorpdfstring{TestPlayerStepOnFloor()}{TestPlayerStepOnFloor()}}
+{\footnotesize\ttfamily void Bomberman.\+Business\+Logic.\+Tests.\+Tests.\+Test\+Player\+Step\+On\+Floor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\mbox{\hyperlink{class_bomberman_1_1_business_logic_1_1_tests_1_1_tests}{Tests}} if player can step on floor. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Kovács\+Levente/\+Documents/oenik\+\_\+prog4\+\_\+2019\+\_\+1\+\_\+p71jvi\+\_\+u41kaf/\+Bomberman/\+Bomberman.\+Business\+Logic.\+Tests/Tests.\+cs\end{DoxyCompactItemize}
